@@ -56,8 +56,12 @@ class TestLanding_001(unittest.TestCase):
 
         self.driver.find_element_by_xpath("/html/body/div[4]/app-root/app-landing-wrapper/app-footer-landing/footer/div[1]/div[2]/a").click() #CENTRO DE AYUDA
         time.sleep(5)
-
         self.driver.find_element_by_xpath("/html/body/div[4]/app-root/app-landing-wrapper/app-footer-landing/footer/div[1]/a").click() #CORREO ELECTRONICO
+
+        MENSAJE_FormaPago = self.driver.find_element_by_xpath("/html/body/div[4]/app-root/app-landing-wrapper/app-footer-landing/footer/div[2]/div[1]").text #FORMAS PAGO
+        print(MENSAJE_FormaPago)
+        assert MENSAJE_FormaPago == "Formas de Pago", "MENSAJE NO COINCIDE"
+
         time.sleep(30)
 
 
