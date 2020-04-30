@@ -20,9 +20,9 @@
     <SUITE FILE_PATH="coverage/test_python_selenium$Unittests_in_landing_cd_py.coverage" NAME="Unittests in landing_cd.py Coverage Results" MODIFIED="1587335756176" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/test" />
     <SUITE FILE_PATH="coverage/test_python_selenium$Unittests_for_tst_001_test_001.coverage" NAME="Unittests for tst_001.test_001 Coverage Results" MODIFIED="1586663919448" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/test" />
     <SUITE FILE_PATH="coverage/test_python_selenium$test_004.coverage" NAME="test_004 Coverage Results" MODIFIED="1587347369274" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/test" />
-    <SUITE FILE_PATH="coverage/test_python_selenium$Unittests_in_testLanding_001_py.coverage" NAME="Unittests in testLanding_001.py Coverage Results" MODIFIED="1588050979122" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/test" />
+    <SUITE FILE_PATH="coverage/test_python_selenium$Unittests_in_testLanding_001_py.coverage" NAME="Unittests in testLanding_001.py Coverage Results" MODIFIED="1588225379882" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/test" />
     <SUITE FILE_PATH="coverage/test_python_selenium$landing_cd.coverage" NAME="landing_cd Coverage Results" MODIFIED="1587347416932" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/test" />
-    <SUITE FILE_PATH="coverage/test_python_selenium$testLanding_001.coverage" NAME="testLanding_001 Coverage Results" MODIFIED="1588048040392" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/test" />
+    <SUITE FILE_PATH="coverage/test_python_selenium$testLanding_001.coverage" NAME="testLanding_001 Coverage Results" MODIFIED="1588223704515" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/test" />
     <SUITE FILE_PATH="coverage/test_python_selenium$testRudimentario.coverage" NAME="testRudimentario Coverage Results" MODIFIED="1587227098841" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/test" />
     <SUITE FILE_PATH="coverage/test_python_selenium$hola.coverage" NAME="hola Coverage Results" MODIFIED="1586668130722" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/test" />
   </component>
@@ -31,7 +31,7 @@
       <file leaf-file-name="test_004.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/test_004.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
+            <state relative-caret-position="340">
               <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="40" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
@@ -43,8 +43,8 @@
       <file leaf-file-name="testRudimentario.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/testRudimentario.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="382">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="391">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
             </state>
           </provider>
         </entry>
@@ -52,8 +52,8 @@
       <file leaf-file-name="testLanding_001.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/testLanding_001.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="436">
-              <caret line="134" column="21" lean-forward="true" selection-start-line="134" selection-start-column="21" selection-end-line="134" selection-end-column="21" />
+            <state relative-caret-position="135">
+              <caret line="350" column="39" lean-forward="true" selection-start-line="350" selection-start-column="39" selection-end-line="350" selection-end-column="39" />
               <folding>
                 <element signature="e#24#39#0" expanded="true" />
               </folding>
@@ -64,7 +64,7 @@
       <file leaf-file-name="case.py" pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python38-32/Lib/unittest/case.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
+            <state relative-caret-position="10506">
               <caret line="632" selection-start-line="632" selection-end-line="632" />
             </state>
           </provider>
@@ -109,10 +109,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1336" />
-    <option name="y" value="90" />
-    <option name="width" value="1382" />
-    <option name="height" value="784" />
+    <option name="x" value="-7" />
+    <option name="y" value="35" />
+    <option name="width" value="1311" />
+    <option name="height" value="630" />
   </component>
   <component name="ProjectId" id="1aNgDrwlqYowknYrsrfXTkw4iJd" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -307,34 +307,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_testLanding_001_py - 2020.04.27 at 16h 30m 33s.xml">
+    <history-entry file="Unittests_in_testLanding_001_py - 2020.04.29 at 18h 02m 18s.xml">
       <configuration name="Unittests in testLanding_001.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_testLanding_001_py - 2020.04.27 at 22h 38m 36s.xml">
+    <history-entry file="Unittests_in_testLanding_001_py - 2020.04.29 at 23h 35m 15s.xml">
       <configuration name="Unittests in testLanding_001.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_testLanding_001_py - 2020.04.27 at 22h 51m 10s.xml">
+    <history-entry file="Unittests_in_testLanding_001_py - 2020.04.29 at 23h 41m 43s.xml">
       <configuration name="Unittests in testLanding_001.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_testLanding_001_py - 2020.04.27 at 22h 54m 11s.xml">
+    <history-entry file="Unittests_in_testLanding_001_py - 2020.04.29 at 23h 48m 34s.xml">
       <configuration name="Unittests in testLanding_001.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_testLanding_001_py - 2020.04.27 at 23h 19m 41s.xml">
+    <history-entry file="Unittests_in_testLanding_001_py - 2020.04.29 at 23h 57m 28s.xml">
       <configuration name="Unittests in testLanding_001.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_testLanding_001_py - 2020.04.27 at 23h 36m 49s.xml">
+    <history-entry file="Unittests_in_testLanding_001_py - 2020.04.30 at 00h 21m 20s.xml">
       <configuration name="Unittests in testLanding_001.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_testLanding_001_py - 2020.04.27 at 23h 45m 32s.xml">
+    <history-entry file="Unittests_in_testLanding_001_py - 2020.04.30 at 00h 24m 57s.xml">
       <configuration name="Unittests in testLanding_001.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_testLanding_001_py - 2020.04.27 at 23h 58m 00s.xml">
+    <history-entry file="Unittests_in_testLanding_001_py - 2020.04.30 at 00h 29m 58s.xml">
       <configuration name="Unittests in testLanding_001.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_testLanding_001_py - 2020.04.28 at 00h 15m 16s.xml">
+    <history-entry file="Unittests_in_testLanding_001_py - 2020.04.30 at 00h 32m 29s.xml">
       <configuration name="Unittests in testLanding_001.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_testLanding_001_py - 2020.04.28 at 00h 22m 56s.xml">
+    <history-entry file="Unittests_in_testLanding_001_py - 2020.04.30 at 00h 50m 04s.xml">
       <configuration name="Unittests in testLanding_001.py" configurationId="tests" />
     </history-entry>
   </component>
@@ -348,17 +348,17 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1358" y="-8" width="1456" height="876" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32791328" />
-      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5007163" side_tool="true" weight="0.3292683" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3292683" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32791328" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.27913278" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32791328" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14971347" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49928367" visible="true" weight="0.32838285" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32673267" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16490166" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -377,24 +377,24 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1461318" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32838285" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.36963695" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32838285" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39933994" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32838285" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32838285" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -411,10 +411,102 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="11" />
+      <option name="time" value="16" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/test/testRudimentario.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python38-32/Lib/unittest/case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10744">
+          <caret line="632" selection-start-line="632" selection-end-line="632" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/testLanding_001.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3332">
+          <caret line="201" column="85" lean-forward="true" selection-start-line="201" selection-start-column="85" selection-end-line="201" selection-end-column="85" />
+          <folding>
+            <element signature="e#24#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/test_004.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/testRudimentario.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python38-32/Lib/unittest/case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10744">
+          <caret line="632" selection-start-line="632" selection-end-line="632" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/testLanding_001.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2142">
+          <caret line="126" column="70" lean-forward="true" selection-start-line="126" selection-start-column="70" selection-end-line="126" selection-end-column="70" />
+          <folding>
+            <element signature="e#24#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/test_004.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/testRudimentario.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python38-32/Lib/unittest/case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10744">
+          <caret line="632" selection-start-line="632" selection-end-line="632" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/testLanding_001.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2125">
+          <caret line="125" lean-forward="true" selection-start-line="125" selection-end-line="125" />
+          <folding>
+            <element signature="e#24#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/test_004.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -649,16 +741,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/enviroment/Lib/site-packages/selenium/webdriver/remote/errorhandler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="241" selection-start-line="241" selection-end-line="241" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/test_004.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
+        <state relative-caret-position="340">
           <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="40" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
@@ -668,22 +753,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/testRudimentario.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="391">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python38-32/Lib/unittest/case.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
+        <state relative-caret-position="10506">
           <caret line="632" selection-start-line="632" selection-end-line="632" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/enviroment/Lib/site-packages/selenium/webdriver/remote/errorhandler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="241" selection-start-line="241" selection-end-line="241" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/testLanding_001.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="134" column="21" lean-forward="true" selection-start-line="134" selection-start-column="21" selection-end-line="134" selection-end-column="21" />
+        <state relative-caret-position="135">
+          <caret line="350" column="39" lean-forward="true" selection-start-line="350" selection-start-column="39" selection-end-line="350" selection-end-column="39" />
           <folding>
             <element signature="e#24#39#0" expanded="true" />
           </folding>

@@ -77,31 +77,55 @@ class TestLanding_001(unittest.TestCase):
 
 
         #FUNCIONALIDADES BARRA DE OPCIONES DE LANDING
+        self.OPCIONES_LANDING = self.driver.find_elements(By.CLASS_NAME, "Menu ng-star-inserted")
+        self.count = 0
+
+        for self.OPC in self.OPCIONES_LANDING:
+            RESULTADO_OPCIONES = ['Descubre', 'Comparte', 'Respalda', 'Descarga',
+                                  'Opciones', 'Planes', 'Negocio']
+            assert RESULTADO_OPCIONES[self.count] == self.OPC.text, "EL TEXTO OPCIONES NO COINCIDE"
+            self.count = self.count + 1
+        time.sleep(3)
+
+
+
         self.driver.find_element_by_xpath("/html/body/div[4]/app-root/app-landing-wrapper/app-nav-bar/div/div/app-menu-navbar/div/div[1]")\
             .click() #DESCUBRE
-        #MENSAJE_01 = self.driver.find_element_by_xpath("/html/body/div[4]/app-root/app-landing-wrapper/app-container1/div/div/div[1]/div/div/text()[1]")\
-         #   .text
-        #print(MENSAJE_01)
 
-        #assert MENSAJE_01 == "Te presentamos el espacio ideal para compartir tu mundo digital entre amigos, familia y compañeros de trabajo. ",\
-         #   "EL TEXTO NO COINCIDE"
+        '''self.TEXTO_DESCUBRE = self.driver.find_elements(By.CLASS_NAME, "wrapper")
+        self.count = 0
 
-        time.sleep(5)
+        for self.TEX in self.TEXTO_DESCUBRE:
+            RESULTADO_TEXTO = ['Te presentamos el espacio ideal para compartir tu mundo digital entre amigos, familia y compañeros de trabajo.  Claro drive es la mejor opción para guardar fotos, videos, música, documentos y más, de manera segura.']
+
+            assert RESULTADO_TEXTO[self.count] == self.TEX.text, "EL TEXTO NO COINCIDE"
+            self.count = self.count + 1
+        time.sleep(3)'''
+
+
+        ''' MENSAJE_01 = self.driver.find_element_by_xpath("/html/body/div[4]/app-root/app-landing-wrapper/app-container1/div/div/div[1]/div/div/text()[1]")\
+            .text
+        print(MENSAJE_01)
+
+        assert MENSAJE_01 == "Te presentamos el espacio ideal para compartir tu mundo digital entre amigos, familia y compañeros de trabajo. ",\
+            "EL TEXTO NO COINCIDE" '''
+
+        time.sleep(3)
         self.driver.find_element_by_xpath("/html/body/div[4]/app-root/app-landing-wrapper/app-nav-bar/div/div/app-menu-navbar/div/div[2]")\
             .click() #COMPARTE
-        time.sleep(5)
+        time.sleep(3)
         self.driver.find_element_by_xpath("/html/body/div[4]/app-root/app-landing-wrapper/app-nav-bar/div/div/app-menu-navbar/div/div[3]")\
             .click() #DESPALDA
-        time.sleep(5)
+        time.sleep(3)
         self.driver.find_element_by_xpath("/html/body/div[4]/app-root/app-landing-wrapper/app-nav-bar/div/div/app-menu-navbar/div/div[4]")\
             .click() #DESCARGA
-        time.sleep(5)
+        time.sleep(3)
         self.driver.find_element_by_xpath("/html/body/div[4]/app-root/app-landing-wrapper/app-nav-bar/div/div/app-menu-navbar/div/div[5]")\
             .click() #OPCIONES
-        time.sleep(5)
+        time.sleep(3)
         self.driver.find_element_by_xpath("/html/body/div[4]/app-root/app-landing-wrapper/app-nav-bar/div/div/app-menu-navbar/div/div[6]")\
             .click() #PLANES
-        time.sleep(5)
+        time.sleep(3)
 
         ######## COMPARO EL NUMERO DE PLANES DENTRO DE UN FOR ########
         self.PLAN_TELCEL = self.driver.find_elements(By.CLASS_NAME, "Capacity")
@@ -111,14 +135,36 @@ class TestLanding_001(unittest.TestCase):
             RESULDADO_PLAN = ['100GB', '200GB', '300GB', '1024GB']
             assert RESULDADO_PLAN[self.count] == self.PLAN_.text, "EL NUMERO DE PLANES NO COINCIDEN"
             self.count = self.count + 1
-
         time.sleep(3)
+        ######## TERMINO DE COMPARAR EL NUMERO DE PLANES DENTRO DE UN FOR ########
+
+        ####### COMPARO TEXTO PERIDO DE PLANES #####
+        self.PERIODO_TELCEL = self.driver.find_elements(By.CLASS_NAME, "Period")
+        self.count = 0
+
+        for self.PER in self.PERIODO_TELCEL:
+            PERIODO_RESULTADO = ['SIN COSTO', 'MENSUAL', 'MENSUAL', 'MENSUAL']
+            assert PERIODO_RESULTADO[self.count] == self.PER.text, "EL TEXTO PERIODO NO COINCIDE"
+            self.count = self.count + 1
+        time.sleep(3)
+        ####### TERMINI DE COMPARAR TEXTO PERIDO DE PLANES #####
+
+        ##### COMPARO COSTO POR MES ######
+        self.COSTO_TELCEL = self.driver.find_elements(By.CLASS_NAME, "Offers ng-tns-c22-1 ng-trigger ng-trigger-togglePlans ng-star-inserted")
+        self.count = 1
+
+        for self.COS in self.COSTO_TELCEL:
+            RESULTADO_COSTO = ['$19.00 MXN', '$36.00 MXN', '$169.00 MXN']
+            assert RESULTADO_COSTO[self.count] == self.COS.text, "EL TEXTO DEL COSTO NO COINCIDE"
+            self.count = self.count + 1
+        time.sleep(3)
+        ###### TERMINO DE COMPARAR COSTO POR MES ######
 
         TEXTO_TELCEL = self.driver.find_element_by_xpath("/html/body/div[4]/app-root/app-landing-wrapper/app-container6/div/div/app-offer/div/app-payment-methods/app-plans/div[1]/div[2]/div[2]/div").text
         print(TEXTO_TELCEL)
         assert TEXTO_TELCEL == "Con tu número Telcel", "TEXTO NO COINCIDE"
         time.sleep(3)
-        ######## TERMINO DE COMPARAR EL NUMERO DE PLANES DENTRO DE UN FOR ########
+
 
         self.driver.find_element_by_xpath("/html/body/div[4]/app-root/app-landing-wrapper/app-container6/div/div/app-offer/div/app-payment-methods/div/div[2]")\
             .click() #PLAN TELMEX
@@ -136,9 +182,71 @@ class TestLanding_001(unittest.TestCase):
 
         TEXTO_TELMEX = self.driver.find_element_by_xpath("/html/body/div[4]/app-root/app-landing-wrapper/app-container6/div/div/app-offer/div/app-payment-methods/app-plans/div[1]/div[2]/div[2]").text
         print(TEXTO_TELMEX)
-        assert  TEXTO_TELMEX == "Con tu número Telmex", "TEXTO NO COINCIDE"
+        assert TEXTO_TELMEX == "Con tu número Telmex", "TEXTO NO COINCIDE"
         time.sleep(3)
         ######## TERMINO DE COMPARAR EL NUMERO DE PLANES DENTRO DE UN FOR ########
+
+        ##### COMPARO COSTO POR MES ######
+        self.COSTO_TELMEX = self.driver.find_elements(By.CLASS_NAME, "Offers ng-tns-c22-1 ng-trigger ng-trigger-togglePlans ng-star-inserted")
+        self.count = 0
+
+        for self.COST in self.COSTO_TELMEX:
+            RESULTADO_COST = ['$19.00 MXN', '$36.00 MXN', '$169.00 MXN']
+            assert RESULTADO_COST[self.count] == self.COST.text, "EL TEXTO COSTO NO COINCIDE"
+            self.count = self.count + 1
+        time.sleep(3)
+        ##### TERMINO DE COMPARAR COSTO POR MES ######
+
+        ####### COMPARO PERIDO TELMEX ######
+        self.PERIODO_TELMEX = self.driver.find_elements(By.CLASS_NAME, "Period")
+        self.count = 0
+
+        for self.PERI in self.PERIODO_TELMEX:
+            PERI_RESULTADO = ['SIN COSTO', 'MENSUAL', 'MENSUAL', 'MENSUAL']
+            assert PERI_RESULTADO[self.count] == self.PERI.text, "EL TEXTO PERIODO NO COINCIDE"
+            self.count = self.count + 1
+        time.sleep(3)
+        #### TERMINO DE COMPARAR PERIODO TELMEX ######
+
+
+
+        self.driver.find_element_by_xpath("/html/body/div[4]/app-root/app-landing-wrapper/app-container6/div/div/app-offer/div/app-payment-methods/div/div[3]")\
+            .click() #PLAN TDC
+        time.sleep(3)
+
+        self.PLAN_TDC = self.driver.find_elements(By.CLASS_NAME, "Capacity")
+        self.count = 0
+
+        for self.PLAN_C in self.PLAN_TDC:
+            RESULT_PLAN = ['200GB', '300GB', '1024GB']
+            assert RESULT_PLAN[self.count] == self.PLAN_C.text, "EL NUMERO DE PLAN  NO COINCIDE"
+            self.count = self.count + 1
+        time.sleep(3)
+
+        self.COSTO_TDC = self.driver.find_elements(By.CLASS_NAME, "Offers ng-tns-c22-1 ng-trigger ng-trigger-togglePlans ng-star-inserted")
+        self.count = 0
+
+        for self.COSTO in self.COSTO_TDC:
+            RESULTADO_COS = ['$19.00 MXN', '$36.00 MXN', '$169.00 MXN']
+            assert RESULTADO_COS[self.count] == self.COSTO.text, "EL TEXTO DEL COSTO NO COINCIDE"
+            self.count = self.count + 1
+        time.sleep(3)
+
+        self.PERIODO_TDC = self.driver.find_elements(By.CLASS_NAME, "Period")
+        self.count = 0
+
+        for self.PERIO in self.PERIODO_TDC:
+            PERIO_RESULTADO = ['MENSUAL', 'MENSUAL', 'MENSUAL']
+            assert PERIO_RESULTADO[self.count] == self.PERIO.text, "EL TEXTO PERIODO MENSUAL NO COINCIDEN"
+            self.count = self.count + 1
+        time.sleep(3)
+
+        self.driver.find_element_by_xpath("/html/body/div[4]/app-root/app-landing-wrapper/app-container6/div/div/app-offer/div/app-payment-methods/div/div[1]")\
+            .click()  #REGRESO AL PLAN TELCEL
+        time.sleep(3)
+
+
+
 
 
         #self.driver.find_element_by_xpath("/html/body/div[4]/app-root/app-landing-wrapper/app-nav-bar/div/div/app-menu-navbar/div/div[7]")\
@@ -234,6 +342,15 @@ class TestLanding_001(unittest.TestCase):
 
 
         #HEADER
+        self.RED_CLARO = self.driver.find_elements(By.CLASS_NAME, "RedClaroSub")
+        self.count = 0
+
+        for self.RED_ in self.RED_CLARO:
+            RESULTADO_RED = ['Claro video', 'Claro música', 'Claro shop']
+            assert RESULTADO_RED[self.count] == self.RED_.text, "LOS TEXTOS NO COINCIDES"
+            self.count = self.count + 1
+        time.sleep(3)
+
         self.driver.find_element_by_xpath("/html/body/div[4]/app-root/app-landing-wrapper/app-top-bar/app-elinks/div/div[2]/span[1]").\
             click() #CLARO VIDEO
         self.driver.switch_to.window(self.driver.window_handles[0])  #REGRESO A LA PESTAÑA 0
