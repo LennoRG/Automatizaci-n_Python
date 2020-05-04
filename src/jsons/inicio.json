@@ -1,0 +1,26 @@
+{
+  "Btn_inicioSesion": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//a[contains(@id,'login')]"
+  },
+  "P_Correo": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[4]/app-root/app-landing-wrapper/div/app-onboarding/div[3]/app-partner/div/div[5]"
+  },
+  "Email": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//input[contains(@class,'InputEmail')]"
+  },
+  "Password": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//input[contains(@class,'InputPassword')]"
+  },
+
+  "IniciarSesion":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//button[@class='Button']"
+  }
+
+
+}
+

@@ -165,6 +165,32 @@ class TestLanding_001(unittest.TestCase):
         assert TEXTO_TELCEL == "Con tu número Telcel", "TEXTO NO COINCIDE"
         time.sleep(3)
 
+        #### ACCION DE BOTONES CONTRATADO AHORA TELCEL ####
+        self.driver.find_element_by_xpath("/html/body/div[4]/app-root/app-landing-wrapper/app-container6/div/div/app-offer/div/app-payment-methods/app-plans/div[1]/a/div")\
+            .click() #BTN 100GB
+        time.sleep(3)
+        self.driver.execute_script("window.scroll(0,document.body.scrollHeight)") #SCROLL BAJO A LOS PLANES
+        time.sleep(2)
+
+        self.driver.find_element_by_xpath("/html/body/div[4]/app-root/app-landing-wrapper/app-container6/div/div/app-offer/div/app-payment-methods/app-plans/div[2]/a/div")\
+            .click() #BTN 200GB
+        time.sleep(3)
+        self.driver.execute_script("window.scroll(0,document.body.scrollHeight)")
+        time.sleep(2)
+
+        self.driver.find_element_by_xpath("/html/body/div[4]/app-root/app-landing-wrapper/app-container6/div/div/app-offer/div/app-payment-methods/app-plans/div[3]/a/div")\
+            .click() #BTN 300GB
+        time.sleep(3)
+        self.driver.execute_script("window.scroll(0,document.body.scrollHeight)")
+        time.sleep(2)
+
+        self.driver.find_element_by_xpath("/html/body/div[4]/app-root/app-landing-wrapper/app-container6/div/div/app-offer/div/app-payment-methods/app-plans/div[4]/a/div")\
+            .click() #BTN 1024GB
+        time.sleep(3)
+        self.driver.find_element_by_xpath("/html/body/div[4]/app-root/app-landing-wrapper/app-nav-bar/div/div/app-menu-navbar/div/div[6]").click() #PLANES
+        time.sleep(3)
+        #### TERMINA ACCION DE BOTONES CONTRATADO AHORA TELCEL ####
+
 
         self.driver.find_element_by_xpath("/html/body/div[4]/app-root/app-landing-wrapper/app-container6/div/div/app-offer/div/app-payment-methods/div/div[2]")\
             .click() #PLAN TELMEX
@@ -208,6 +234,34 @@ class TestLanding_001(unittest.TestCase):
         time.sleep(3)
         #### TERMINO DE COMPARAR PERIODO TELMEX ######
 
+        #### ACCION DE BOOTONES CONTRATAR TELMEX ###
+        self.driver.find_element_by_xpath("/html/body/div[4]/app-root/app-landing-wrapper/app-container6/div/div/app-offer/div/app-payment-methods/app-plans/div[1]/a/div")\
+            .click() #BTN 100GB
+        time.sleep(2)
+        self.driver.execute_script("window.scroll(0,document.body.scrollHeight)")
+        time.sleep(2)
+
+        self.driver.find_element_by_xpath("/html/body/div[4]/app-root/app-landing-wrapper/app-container6/div/div/app-offer/div/app-payment-methods/app-plans/div[2]/a/div")\
+            .click() #BTN 200GB
+        time.sleep(2)
+        self.driver.execute_script("window.scroll(0,document.body.scrollHeight)")
+        time.sleep(2)
+
+        self.driver.find_element_by_xpath("/html/body/div[4]/app-root/app-landing-wrapper/app-container6/div/div/app-offer/div/app-payment-methods/app-plans/div[3]/a/div")\
+            .click() #BTN 300GB
+        time.sleep(2)
+        self.driver.execute_script("window.scroll(0,document.body.scrollHeight)")
+        time.sleep(2)
+
+        self.driver.find_element_by_xpath("/html/body/div[4]/app-root/app-landing-wrapper/app-container6/div/div/app-offer/div/app-payment-methods/app-plans/div[4]/a/div")\
+            .click() #BTN 1024GB
+        time.sleep(2)
+        self.driver.find_element_by_xpath("/html/body/div[4]/app-root/app-landing-wrapper/app-nav-bar/div/div/app-menu-navbar/div/div[6]")\
+            .click()  #PLANES
+        time.sleep(3)
+
+        #### TERMINA ACCION DE DE BOTONES CONTRATAR TELMX ###
+
 
 
         self.driver.find_element_by_xpath("/html/body/div[4]/app-root/app-landing-wrapper/app-container6/div/div/app-offer/div/app-payment-methods/div/div[3]")\
@@ -241,12 +295,26 @@ class TestLanding_001(unittest.TestCase):
             self.count = self.count + 1
         time.sleep(3)
 
+        self.driver.find_element_by_xpath("/html/body/div[4]/app-root/app-landing-wrapper/app-container6/div/div/app-offer/div/app-payment-methods/app-plans/div[1]/a/div")\
+            .click() #BTN 200GG CONTRATALO TDC
+        time.sleep(2)
+        self.driver.execute_script("window.scroll(0,document.body.scrollHeight)")
+        time.sleep(2)
+
+        self.driver.find_element_by_xpath("/html/body/div[4]/app-root/app-landing-wrapper/app-container6/div/div/app-offer/div/app-payment-methods/app-plans/div[2]/a/div")\
+            .click() #BTN 300GB CONTRATALO TDC
+        self.driver.execute_script("window.scroll(0,document.body.scrollHeight)")
+        time.sleep(2)
+
+        self.driver.find_element_by_xpath("/html/body/div[4]/app-root/app-landing-wrapper/app-container6/div/div/app-offer/div/app-payment-methods/app-plans/div[3]/a/div")\
+            .click() #BTN 1024GB CONTRATALO TDC
+        self.driver.find_element_by_xpath("/html/body/div[4]/app-root/app-landing-wrapper/app-nav-bar/div/div/app-menu-navbar/div/div[6]")\
+            .click() #PLANES
+        time.sleep(3)
+
         self.driver.find_element_by_xpath("/html/body/div[4]/app-root/app-landing-wrapper/app-container6/div/div/app-offer/div/app-payment-methods/div/div[1]")\
             .click()  #REGRESO AL PLAN TELCEL
         time.sleep(3)
-
-
-
 
 
         #self.driver.find_element_by_xpath("/html/body/div[4]/app-root/app-landing-wrapper/app-nav-bar/div/div/app-menu-navbar/div/div[7]")\
