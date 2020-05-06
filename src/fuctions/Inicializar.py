@@ -8,7 +8,7 @@ class Inicializar():
     #JSON Data
     Json = basedir + u'\jsons'
 
-    Environment = 'PROD'
+    Environment = 'Test'
 
     #BROWSER DE PRUEBAS
     NAVEGADOR = u'Chrome'

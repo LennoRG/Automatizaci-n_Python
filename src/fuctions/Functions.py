@@ -1,3 +1,5 @@
+import time
+
 import pytest
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver import DesiredCapabilities
@@ -49,15 +51,17 @@ class Functions(Inicializar):
 
     def tearDow(self):
         print("SE CERRO CON EXITO EL DRIVER")
+        time.sleep(5)
         self.driver.quit()
 
-    ######## FUNCION INICIO SESEION A TRAVES DE METODOS JSON ########
+    #################################################################
+    ############### FUNCION RUTA DE CARPETA DEL JSON ################
+    #################################################################
     '''def __init__(self):
         self.json_GetFieldBy = None  #VALOR QUE CONTINE ESE ATRIBUTO EN EL JSON INCIO
         self.json_ValueToFind = None #VALOR QUE CONTINE ESE ATRIBUTO EN EL JSON INCIO'''
 
     def get_json_file(self, file):
-
         json_path = Inicializar.Json + "/" + file + '.json' #Ruta de la carpeta donde esta el JSON, Mencionada en el archivo Inicializar
         try:
             with open(json_path, "r") as read_file:    #Abro el json
@@ -69,8 +73,9 @@ class Functions(Inicializar):
             pytest.skip(u"get_json_file: No se encontro el archivo " + file)
             Functions.tearDow(self)
 
-
-    ###### LEO LAS ENTIDADES DEL JSON #####
+    ################################################################################
+    ########################### LEO LAS ENTIDADES DEL JSON #########################
+    ################################################################################
     def get_entity(self, entity):    # entity ES LAS ENTIDAD DEL JSON QUE QUIERO LEER
         if self.json_strings is False:
             print("Esta Entity No Existe")  #Si la entidad no existe se imprime
@@ -85,12 +90,14 @@ class Functions(Inicializar):
                 return None
 
 
-    ######## COMPORTAMIENTO DE LAS FUNCIONES DEL JSON, PARA QUE SE EJECUTEN EN EL TEST ##########
+    ########################################################################################################
+    ############### COMPORTAMIENTO DE LAS FUNCIONES DEL JSON, PARA QUE SE EJECUTEN EN EL TEST ##############
+    ########################################################################################################
     def get_elements(self, entity, MyTextElement = None):
         Get_Entity  = Functions.get_entity(self, entity)
 
         if Get_Entity is None:
-            print("No se encontro el valor en JSON Inicio")
+            print("No se encontro el valor en JSON Definido")
         else:
             try:
                 if self.json_GetFieldBy.lower() == "id":

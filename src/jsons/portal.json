@@ -1,0 +1,141 @@
+{
+  "Btn_inicioSesion": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//a[contains(@id,'login')]"
+  },
+  "P_Correo": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[4]/app-root/app-landing-wrapper/div/app-onboarding/div[3]/app-partner/div/div[5]"
+  },
+  "Email": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//input[contains(@class,'InputEmail')]"
+  },
+  "Password": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//input[contains(@class,'InputPassword')]"
+  },
+  "IniciarSesion":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//button[@class='Button']"
+  },
+
+  "Btn_Actividad":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "(//a[@href='/apps/activity/'])[1]"
+  },
+  "Btn_Crear+":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//div[@class='button-create-resource']"
+  },
+
+  "Btn_Carpeta":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//span[@class='menu-item-name'][contains(.,'Carpeta nueva')]"
+  },
+  "Crear_Carpeta":{
+    "GetFieldBy": "Id",
+    "ValueToFind": "CreateDirect"
+  },
+
+  "Btn_Crear_Carpeta":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[3]/div/app-amx-files/app-sidebar/app-upload/div/app-upload-menu/div/app-upload-menu-item[1]/div/button"
+  },
+
+  "Cerrar_detalle_Carpeta":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//a[@class='close icon-close'][contains(.,'Cerrar')]"
+  },
+  "Cargar_Archivo":{
+    "GetFieldBy": "Id",
+    "ValueToFind": "UploadFile"
+  },
+  "Cargar_Carpeta":{
+    "GetFieldBy": "Id",
+    "ValueToFind": "UploadFolder"
+  },
+  "Nuevo_Archivo_Texto":{
+    "GetFieldBy": "Id",
+    "ValueToFind": "CreateFile"
+  },
+  "Btn_Crear_Archivo_Texto":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[3]/div/app-amx-files/app-sidebar/app-upload/div/app-upload-menu/div/app-upload-menu-item[4]/div/button"
+  },
+
+  "Cerrar_Archivo_Texto":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//button[contains(@id,'editor_close')]"
+  },
+  "Cerrar_Detalle_Texto":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[3]/div/div[1]/a"
+  },
+
+  "Nuevo_Documento":{
+    "GetFieldBy": "Id",
+    "ValueToFind": "CreateDocument"
+  },
+  "Btn_Crear_Nuevo_Documento":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[3]/div/app-amx-files/app-sidebar/app-upload/div/app-upload-menu/div/app-upload-menu-item[5]/div/button"
+  },
+
+  "Cerrar_Nuevo_Documento":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//a[contains(@class,'oc-dialog-close')]"
+  },
+
+  "Hoja_Calculo":{
+    "GetFieldBy": "Id",
+    "ValueToFind": "CreateSpreadsheet"
+  },
+  "Btn_Crear_Hoja_Calculo":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[3]/div/app-amx-files/app-sidebar/app-upload/div/app-upload-menu/div/app-upload-menu-item[6]/div/button"
+  },
+  "Cerrar_Hoja_Calculo":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//a[contains(@class,'oc-dialog-close')]"
+  },
+
+  "Nueva_Presentacion":{
+    "GetFieldBy": "Id",
+    "ValueToFind": "CreatePresentation"
+  },
+  "Btn_Crear_Presentacion":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[3]/div/app-amx-files/app-sidebar/app-upload/div/app-upload-menu/div/app-upload-menu-item[7]/div/button"
+  },
+  "Cerrar_Presentacion":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//a[contains(@class,'oc-dialog-close')]"
+  },
+
+
+  "Btn_Notificacion":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//div[@id='notification']"
+  },
+  "Vista_Cuadricula":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[3]/div/app-amx-files/app-files-content/div/app-header/app-breadcrumb/div[1]"
+  },
+  "Vista_Lista":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[3]/div/app-amx-files/app-files-content/div/app-header/app-breadcrumb/div[1]"
+  },
+  "Mover_Papelera":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[3]/div/app-amx-files/app-files-content/div/app-list[3]/app-file[1]/div/div[1]/app-menu/ul/li[1]"
+  },
+  "Check_Imagen":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "(//div[contains(@class,'square')])[2]"
+  },
+  "Compartir":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[3]/div/app-amx-files/app-files-content/div/app-list[3]/app-file[1]/div/div[1]/app-menu/ul/li[2]"
+  }
+}
