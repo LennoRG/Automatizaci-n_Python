@@ -66,7 +66,7 @@
 
   "Cerrar_Archivo_Texto":{
     "GetFieldBy": "Xpath",
-    "ValueToFind": "//button[contains(@id,'editor_close')]"
+    "ValueToFind": "/html/body/div[3]/div/div[2]/div[2]/div[1]/button"
   },
   "Cerrar_Detalle_Texto":{
     "GetFieldBy": "Xpath",
@@ -130,12 +130,50 @@
     "GetFieldBy": "Xpath",
     "ValueToFind": "/html/body/div[3]/div/app-amx-files/app-files-content/div/app-list[3]/app-file[1]/div/div[1]/app-menu/ul/li[1]"
   },
-  "Check_Imagen":{
-    "GetFieldBy": "Xpath",
-    "ValueToFind": "(//div[contains(@class,'square')])[2]"
-  },
   "Compartir":{
     "GetFieldBy": "Xpath",
     "ValueToFind": "/html/body/div[3]/div/app-amx-files/app-files-content/div/app-list[3]/app-file[1]/div/div[1]/app-menu/ul/li[2]"
+  },
+  "Cerrar_Compartir":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/app-sharing-modal/div/div[1]/span"
+  },
+  "Favoritiar":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[3]/div/app-amx-files/app-files-content/div/app-list[3]/app-file[1]/div/div[1]/app-menu/ul/li[3]"
+  },
+  "Detalles": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[3]/div/app-amx-files/app-files-content/div/app-list[3]/app-file[1]/div/div[1]/app-menu/ul/li[4]"
+  },
+  "Cerrar_Detalles": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[3]/div/div/a"
+  },
+  "Rename": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[3]/div/app-amx-files/app-files-content/div/app-list[3]/app-file[1]/div/div[1]/app-menu/ul/li[5]"
+  },
+  "Mover_Copiar": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[3]/div/app-amx-files/app-files-content/div/app-list[3]/app-file[1]/div/div[1]/app-menu/ul/li[6]"
+  },
+  "Cerrar_Mover_Copiar": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/app-modal[2]/div/div[1]/span"
+  },
+  "Descargar": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[3]/div/app-amx-files/app-files-content/div/app-list[3]/app-file[1]/div/div[1]/app-menu/ul/li[7]"
+  },
+
+  "Check_Imagen": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[3]/div/app-amx-files/app-files-content/div/app-list[3]/app-file[1]/div/app-checkbox"
+  },
+  "Titulo_Archivos": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[3]/div/app-amx-files/app-files-content/div/app-list[3]/div[1]"
   }
+
 }

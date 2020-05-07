@@ -94,7 +94,7 @@ class Functions(Inicializar):
     ############### COMPORTAMIENTO DE LAS FUNCIONES DEL JSON, PARA QUE SE EJECUTEN EN EL TEST ##############
     ########################################################################################################
     def get_elements(self, entity, MyTextElement = None):
-        Get_Entity  = Functions.get_entity(self, entity)
+        Get_Entity = Functions.get_entity(self, entity)
 
         if Get_Entity is None:
             print("No se encontro el valor en JSON Definido")
@@ -125,6 +125,46 @@ class Functions(Inicializar):
                 Functions.tearDow(self)
             except TimeoutError:
                 print("get_text: No se encontro el elemento: " + self.json_ValueToFind)
+                Functions.tearDow(self)
+
+    #################################################################################################
+    ########################## GET TEXT FUNCIONALIDAD PARA COMPARAR TEXTOS ##########################
+    #################################################################################################
+    def get_text(self, entity, MyTextElement = None):
+        Get_Entity = Functions.get_entity(self, entity)
+
+        if Get_Entity is None:
+            print("No se encontro el valor en el Json definido")
+
+        else:
+            try:
+                if self.json_GetFieldBy.lower() == "id":
+                    elements = self.driver.find_element_by_id(self.json_ValueToFind)
+
+                if self.json_GetFieldBy.lower() == "name":
+                    elements = self.driver.find_element_by_name(self.json_ValueToFind)
+
+                if self.json_GetFieldBy.lower() == "xpath":
+                    if MyTextElement is not None:
+                        self.json_ValueToFind = self.json_ValueToFind.format(MyTextElement)
+                        print(self.json_ValueToFind)
+                    elements = self.driver.find_element_by_xpath(self.json_ValueToFind)
+
+                if self.json_GetFieldBy.lower() == "link":
+                    elements.find_element_by_partial_link_text(self.json_ValueToFind)
+
+                if self.json_GetFieldBy.lower() == "css":
+                    elements == self.driver.find_element_by_css_selector(self.json_ValueToFind)
+
+                print("get_text: " + self.json_ValueToFind)
+                print("Text Value: " + elements.text)
+                return elements.text
+
+            except NoSuchElementException:
+                print("get_text: No se encontro el elemento: " +self.json_ValueToFind)
+                Functions.tearDow(self)
+            except TimeoutError:
+                print("get_text: No se encontro el elemento: " +self.json_ValueToFind)
                 Functions.tearDow(self)
 
 

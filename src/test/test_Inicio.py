@@ -1,5 +1,6 @@
 import time
 
+from selenium.webdriver import ActionChains
 from selenium.webdriver.common.by import By
 
 from src.fuctions.Functions import Functions as NextCloud
@@ -106,13 +107,80 @@ class TestInicio(NextCloud, unittest.TestCase):
         NextCloud.get_elements(self, "Vista_Lista").click()
         time.sleep(3)
 
+        ######### FUNCIONES DE OPCIONES DE ARCHIVOS ###########
+        '''self.NAME_ACCIONES_ARCHIVOS = self.driver.find_elements(By.XPATH, "/html/body/div[3]/div/app-amx-files/app-files-content/div/app-list[3]/app-file[1]/div/div[1]/app-menu/ul/li[2]/div[1]/div")
+        self.count = 0
+
+        for self.NAM in self.NAME_ACCIONES_ARCHIVOS:
+            RESULTADO_NAME = ['Mover a papelera', 'Compartir',
+                              'Añadir a favoritos', 'Detalles',
+                              'Renombrar', 'Mover o copiar', 'Descargar']
+            assert RESULTADO_NAME[self.count] == self.NAM.text, "LOS TEXTOS NOMBRES NO COINCIDEN"
+            self.count = self.count + 1'''
+
         NextCloud.get_elements(self, "Mover_Papelera").click()
         time.sleep(3)
         NextCloud.get_elements(self, "Compartir").click()
+        time.sleep(3)
+        NextCloud.get_elements(self, "Cerrar_Compartir").click()
+        time.sleep(3)
+
+        ####### FUNCION PARA LOCALIZAR UN ELEMENT Y DESPLEGAR SU CONTENIDO #########
+        localizador = self.driver.find_element(By.XPATH, "/html/body/div[3]/div/app-amx-files/app-files-content/div/app-list[3]/app-file[1]/div/div[1]/div[3]")
+        action = ActionChains(self.driver)
+        action.move_to_element(localizador)
+        action.perform()
+        time.sleep(3)
+        ####### TERMINA FUNCION PARA LOCALIZAR UN ELEMENT Y DESPLEGAR SU CONTENIDO #########
+
+        NextCloud.get_elements(self, "Favoritiar").click()
+        time.sleep(3)
+
+        localizador = self.driver.find_element(By.XPATH,"/html/body/div[3]/div/app-amx-files/app-files-content/div/app-list[3]/app-file[1]/div/div[1]/div[3]")
+        action = ActionChains(self.driver)
+        action.move_to_element(localizador)
+        action.perform()
+        time.sleep(3)
+        NextCloud.get_elements(self, "Detalles").click()
+        time.sleep(3)
+        NextCloud.get_elements(self, "Cerrar_Detalles").click()
         time.sleep(5)
 
+        localizador = self.driver.find_element(By.XPATH, "/html/body/div[3]/div/app-amx-files/app-files-content/div/app-list[3]/app-file[1]/div/div[1]/div[3]")
+        action = ActionChains(self.driver)
+        action.move_to_element(localizador)
+        action.perform()
+        time.sleep(3)
+        NextCloud.get_elements(self, "Rename").click()
+        time.sleep(3)
 
-        #localizador = self.driver.find_element(By.XPATH)
+        NextCloud.get_elements(self, "Mover_Copiar").click()
+        time.sleep(3)
+        NextCloud.get_elements(self, "Cerrar_Mover_Copiar").click()
+        time.sleep(3)
+
+        localizador = self.driver.find_element(By.XPATH, "/html/body/div[3]/div/app-amx-files/app-files-content/div/app-list[3]/app-file[1]/div/div[1]/div[3]")
+        action = ActionChains(self.driver)
+        action.move_to_element(localizador)
+        action.perform()
+        time.sleep(3)
+        NextCloud.get_elements(self, "Descargar").click()
+        time.sleep(3)
+
+        localizador = self.driver.find_element(By.XPATH, "/html/body/div[3]/div/app-amx-files/app-files-content/div/app-list[3]/app-file[1]/div/div[1]/div[3]")
+        action = ActionChains(self.driver)
+        action.move_to_element(localizador)
+        action.perform()
+        time.sleep(3)
+        NextCloud.get_elements(self, "Favoritiar").click() #DESFAVORITIAR
+        time.sleep(3)
+
+        NextCloud.get_elements(self, "Check_Imagen").click()
+        time.sleep(3)
+
+        assert NextCloud.get_text(self, "Titulo_Archivos") == "Archivos" #COMPARO EL TEXT ARCHIVOS
+
+
 
 
         '''Inicio.get_elements(self, "Btn_Actividad").click()
