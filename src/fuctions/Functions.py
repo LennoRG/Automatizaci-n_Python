@@ -1,10 +1,13 @@
 import time
+from telnetlib import EC
 
 import pytest
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver import DesiredCapabilities
 from selenium.webdriver.chrome import webdriver
 from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.wait import WebDriverWait
 
 from src.fuctions.Inicializar import Inicializar
 from selenium.webdriver.chrome.options import Options as OpcionesChrome
@@ -166,6 +169,55 @@ class Functions(Inicializar):
             except TimeoutError:
                 print("get_text: No se encontro el elemento: " +self.json_ValueToFind)
                 Functions.tearDow(self)
+
+    #############################################################################################
+    ######################### FUNCION PARA ESPERAR ELEMENTOS  ###################################
+    #############################################################################################
+    def esperar_elemento(self, locator, MyTextElement = None):
+        Get_Entity = Functions.get_entity(self, locator)
+
+        if Get_Entity is None:
+            return print("No se encontro el Valor en el Json definido")
+
+        else:
+            try:
+                if self.json_GetFieldBy.lower() == "id":
+                    wait = WebDriverWait(self.driver, 20)  #TIEMPO DE ESPERA
+                    wait.until(EC.visibility_of_element_located((By.ID, self.json_ValueToFind)))
+                    wait.until(EC.element_to_be_clickable((By.ID, self.json_ValueToFind)))
+                    print(u"Esperar_Elemento: Se visualizo el elemento " + locator)
+                    return True
+
+                if self.json_GetFieldBy.lower() == "name":
+                    wait = WebDriverWait(self.driver, 20)
+                    wait.until(EC.isibility_of_element_located((By.NAME, self.json_ValueToFind)))
+                    wait.until(EC.isibility_of_element_located((By.NAME, self.json_ValueToFind)))
+                    print(u"Esperar_Elemento: Se visualizo el elemento " + locator)
+                    return True
+
+                if self.json_GetFieldBy.lower() == "xpath":
+                    wait = WebDriverWait(self.driver, 20)
+                    if MyTextElement is not None:
+                        self.json_ValueToFind = self.json_ValueToFind.format(MyTextElement)
+                        print(self.json_ValueToFind)
+
+
+                        wait.until(EC.visibility_of_element_located((By.XPATH, self.json_ValueToFind)))
+                        wait.until(EC.element_to_be_clickable((By.XPATH, self.json_ValueToFind)))
+                        print(u"Esperar_Elemento: Se visualizo el elemento " + locator)
+                        return True
+
+                if self.json_GetFieldBy.lower() == "link":
+                    wait = WebDriverWait(self.driver, 20)
+                    wait.until(EC.visibility_of_element_located((By.LINK_TEXT, self.json_ValueToFind)))
+                    wait.until(EC.EC.element_to_be_clickable((By.PARTIAL_LINK_TEXT, self.json_ValueToFind)))
+                    print(u"Esperar_Elemento: Se visualizo el elemento " + locator)
+                    return True
+            except TimeoutError:
+                print(u"Esperar_Elemento: No presente " + locator)
+                Functions.tearDow(self)
+            except NoSuchElementException(self):
+                print(u"Esperar_Elemento: No presente " + locator)
 
 
 

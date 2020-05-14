@@ -30,6 +30,7 @@ class TestInicio(NextCloud, unittest.TestCase):
         NextCloud.get_elements(self, "Email").send_keys(nombre)
         NextCloud.get_elements(self, "Password").send_keys(contraseña)
 
+        #NextCloud.esperar_elemento(self, "IniciarSesion") #ESPERAR ELEMTO
 
         NextCloud.get_elements(self, "IniciarSesion").click()
         time.sleep(5)
@@ -55,6 +56,8 @@ class TestInicio(NextCloud, unittest.TestCase):
 
         NextCloud.get_elements(self, "Crear_Carpeta").click()
         time.sleep(3)
+        #NextCloud.esperar_elemento(self, "Btn_Crear_Carpeta")  # ESPERAR ELEMTOvvvvvv
+
         NextCloud.get_elements(self, "Btn_Crear_Carpeta").click()
         time.sleep(3)
         NextCloud.get_elements(self, "Cerrar_detalle_Carpeta").click()
@@ -126,7 +129,7 @@ class TestInicio(NextCloud, unittest.TestCase):
         time.sleep(3)
 
         ####### FUNCION PARA LOCALIZAR UN ELEMENT Y DESPLEGAR SU CONTENIDO #########
-        localizador = self.driver.find_element(By.XPATH, "/html/body/div[3]/div/app-amx-files/app-files-content/div/app-list[3]/app-file[1]/div/div[1]/div[3]")
+        '''localizador = self.driver.find_element(By.XPATH, "/html/body/div[3]/div/app-amx-files/app-files-content/div/app-list[3]/app-file[1]/div/div[1]/div[3]")
         action = ActionChains(self.driver)
         action.move_to_element(localizador)
         action.perform()
@@ -134,7 +137,7 @@ class TestInicio(NextCloud, unittest.TestCase):
         ####### TERMINA FUNCION PARA LOCALIZAR UN ELEMENT Y DESPLEGAR SU CONTENIDO #########
 
         NextCloud.get_elements(self, "Favoritiar").click()
-        time.sleep(3)
+        time.sleep(3)'''
 
         localizador = self.driver.find_element(By.XPATH,"/html/body/div[3]/div/app-amx-files/app-files-content/div/app-list[3]/app-file[1]/div/div[1]/div[3]")
         action = ActionChains(self.driver)
@@ -167,21 +170,119 @@ class TestInicio(NextCloud, unittest.TestCase):
         NextCloud.get_elements(self, "Descargar").click()
         time.sleep(3)
 
-        localizador = self.driver.find_element(By.XPATH, "/html/body/div[3]/div/app-amx-files/app-files-content/div/app-list[3]/app-file[1]/div/div[1]/div[3]")
+        '''localizador = self.driver.find_element(By.XPATH, "/html/body/div[3]/div/app-amx-files/app-files-content/div/app-list[3]/app-file[1]/div/div[1]/div[3]")
         action = ActionChains(self.driver)
         action.move_to_element(localizador)
         action.perform()
         time.sleep(3)
         NextCloud.get_elements(self, "Favoritiar").click() #DESFAVORITIAR
-        time.sleep(3)
+        time.sleep(3)'''
 
-        NextCloud.get_elements(self, "Check_Imagen").click()
+        NextCloud.get_elements(self, "Check_Imagen").click() #SELECCIONO ARCHIVO
+        time.sleep(3)
+        NextCloud.get_elements(self, "Check_Imagen").click() #DESELECCIONO ARCHIVO
         time.sleep(3)
 
         assert NextCloud.get_text(self, "Titulo_Archivos") == "Archivos" #COMPARO EL TEXT ARCHIVOS
+        assert NextCloud.get_text(self, "Titulo_Carpeta") == "Carpetas" #COMPARO EL TEXT CARPETA
+        assert NextCloud.get_text(self, "Titulo_Archivos_Recientes") == "Archivos recientes"  #COMPARO EL TEXT ARCHIVOS RECIENTES
+
+        NextCloud.get_elements(self, "Check_Carpeta").click()  #SELECCIONO CARPETA
+        time.sleep(3)
+        NextCloud.get_elements(self, "Check_Carpeta").click()  #DESELECCIONO CARPETA
+        time.sleep(3)
+        NextCloud.get_elements(self, "Mover_Papelera_Carpeta").click()  #ELIMONO CARPETA
+        time.sleep(3)
+
+        #FUNCIONALIDADES HEADER LIST_VIEW
+        NextCloud.get_elements(self, "Check_Header_list_view").click()
+        time.sleep(3)
+
+        '''self.OPCIONES_HEADER = self.driver.find_elements(By.XPATH, "/html/body/div[3]/div/app-amx-files/app-files-content/div/app-header/div/div[2]")
+        self.count = 0
+
+        for self.OPC in self.OPCIONES_HEADER:
+            RESULTADO_OPCIONES = ['Mover o copiar', 'Descargar', 'Eliminar']
+            assert RESULTADO_OPCIONES[self.count] == self.OPC.text, "LOS TEXTO NO COINCIDEN"
+            self.count = self.count + 1
+        time.sleep(3)'''
+        assert NextCloud.get_text(self, "Header_Mover_Copiar") == "Mover o copiar"
+        assert NextCloud.get_text(self, "Header_Descargar") == "Descargar"
+        assert NextCloud.get_text(self, "Header_Eliminar") == "Eliminar"
+
+        NextCloud.get_elements(self, "Header_Mover_Copiar").click()
+        time.sleep(3)
+        NextCloud.get_elements(self, "Header_Cerrar_Mover_Copiar").click()
+        time.sleep(3)
+
+        NextCloud.get_elements(self, "Header_Descargar").click()
+        time.sleep(3)
+        #NextCloud.get_elements(self, "Check_Header_list_view").click()
+        time.sleep(3)
+        #NextCloud.get_elements(self, "Header_Eliminar").click()
+        #time.sleep(3)
+        #TERMINA FUNCIONALIDADES HEADER LIST_VIEW
+
+        ############### FUNCIONALIDADES DE LA LISTA DE OPCIONES EN IMAGENES EN ARCHIVOS RECIENTES ############
+        NextCloud.get_elements(self, "Menu_List_Imagenes").click()
+        time.sleep(3)
+
+        assert NextCloud.get_text(self, "Menu_List_Imagenes_Eliminar") == "Mover a papelera"
+        assert NextCloud.get_text(self, "Menu_List_Imagenes_Compartir") == "Compartir"
+        assert NextCloud.get_text(self, "Menu_List_Imagenes_Favoritiar") == "Añadir a favoritos"
+        assert NextCloud.get_text(self, "Menu_List_Imagenes_Destalles") == "Detalles"
+        assert NextCloud.get_text(self, "Menu_List_Imagenes_Renombrar") == "Renombrar"
+        assert NextCloud.get_text(self, "Menu_List_Imagenes_MoverCopiar") == "Mover o copiar"
+        assert NextCloud.get_text(self, "Menu_List_Imagenes_Descargar") == "Descargar"
+        time.sleep(3)
+
+        NextCloud.get_elements(self, "Menu_List_Imagenes_Eliminar").click()
+        time.sleep(3)
+
+        NextCloud.get_elements(self, "Menu_List_Imagenes").click()
+        time.sleep(3)
+        NextCloud.get_elements(self, "Menu_List_Imagenes_Compartir").click()
+        time.sleep(3)
+        NextCloud.get_elements(self, "Cerrar_Compartir").click()
+        time.sleep(3)
+
+        NextCloud.get_elements(self, "Menu_List_Imagenes").click()
+        time.sleep(3)
+        NextCloud.get_elements(self, "Menu_List_Imagenes_Favoritiar").click()
+        time.sleep(3)
+        NextCloud.get_elements(self, "Menu_List_Imagenes").click()
+        time.sleep(3)
+        NextCloud.get_elements(self, "Cerrar_Imagen").click()
+        time.sleep(3)
+
+
+        NextCloud.get_elements(self, "Menu_List_Imagenes").click()
+        time.sleep(3)
+        NextCloud.get_elements(self, "Menu_List_Imagenes_Destalles").click()
+        time.sleep(3)
+        NextCloud.get_elements(self, "Cerrar_Detalles").click()
+        time.sleep(5)
+
+        NextCloud.get_elements(self, "Menu_List_Imagenes").click()
+        time.sleep(3)
+        NextCloud.get_elements(self, "Menu_List_Imagenes_Renombrar").click()
+        time.sleep(3)
+
+        NextCloud.get_elements(self, "Menu_List_Imagenes").click()
+        time.sleep(3)
+        NextCloud.get_elements(self, "Menu_List_Imagenes_MoverCopiar").click()
+        time.sleep(3)
+        NextCloud.get_elements(self, "Cerrar_Mover_Copiar").click()
+        time.sleep(3)
+
+        NextCloud.get_elements(self, "Menu_List_Imagenes").click()
+        time.sleep(3)
+        NextCloud.get_elements(self, "Menu_List_Imagenes_Descargar").click()
+        time.sleep(3)
 
 
 
+        ############### FUNCIONALIDADES DE LA LISTA DE OPCIONES EN IMAGENES EN ARCHIVOS RECIENTES ############
 
         '''Inicio.get_elements(self, "Btn_Actividad").click()
         time.sleep(10)'''
