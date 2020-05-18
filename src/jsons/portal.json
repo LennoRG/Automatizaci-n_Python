@@ -140,7 +140,7 @@
   },
   "Favoritiar":{
     "GetFieldBy": "Xpath",
-    "ValueToFind": "/html/body/div[3]/div/app-amx-files/app-files-content/div/app-list[2]/app-file/div/div[1]/app-menu/ul/li[3]/div[1]"
+    "ValueToFind": "/html/body/div[3]/div/app-amx-files/app-files-content/div/app-list[3]/app-file[1]/div/div[1]/app-menu/ul/li[3]/div[1]"
   },
   "Detalles": {
     "GetFieldBy": "Xpath",
@@ -231,9 +231,15 @@
     "GetFieldBy": "Xpath",
     "ValueToFind": "/html/body/div[3]/div/app-amx-files/app-files-content/div/app-list[1]/app-file[1]/div/div[1]/app-menu/ul/li[3]"
   },
+  "Menu_List_Texto_Destalles": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[3]/div/app-amx-files/app-files-content/div/app-list[1]/app-file[1]/div/div[1]/app-menu/ul/li[4]/div[2]"
+
+  },
   "Menu_List_Imagenes_Destalles": {
     "GetFieldBy": "Xpath",
-    "ValueToFind": "/html/body/div[3]/div/app-amx-files/app-files-content/div/app-list[1]/app-file[1]/div/div[1]/app-menu/ul/li[4]"
+    "ValueToFind": "/html/body/div[3]/div/app-amx-files/app-files-content/div/app-list[1]/app-file[1]/div/div[1]/app-menu/ul/li[4]/div[1]"
+
   },
    "Menu_List_Imagenes_Renombrar": {
     "GetFieldBy": "Xpath",
@@ -250,6 +256,45 @@
   "Cerrar_Imagen": {
     "GetFieldBy": "Xpath",
     "ValueToFind": "/html/body/div[3]/div/app-media-viewer/div/input[3]"
+  },
+
+
+
+  "Filtro_ALL_ARCHIVOS": {
+    "GetFieldBy": "Id",
+    "ValueToFind": "ALL"
+  },
+  "Filtro_RECIENTE": {
+    "GetFieldBy": "Id",
+    "ValueToFind": "RECENT"
+  },
+  "Filtro_Favoritos": {
+    "GetFieldBy": "Id",
+    "ValueToFind": "FAVORITES"
+  },
+  "Filtro_Imagenes": {
+    "GetFieldBy": "Id",
+    "ValueToFind": "IMAGES"
+  },
+  "Filtro_Videos": {
+    "GetFieldBy": "Id",
+    "ValueToFind": "VIDEOS"
+  },
+  "Filtro_Contactos": {
+    "GetFieldBy": "Id",
+    "ValueToFind": "CONTACTS"
+  },
+  "Filtro_Compartidos": {
+    "GetFieldBy": "Id",
+    "ValueToFind": "SHARED"
+  },
+  "Filtro_Etiquetas": {
+    "GetFieldBy": "Id",
+    "ValueToFind": "TAGS"
+  },
+  "Filtro_Papelera": {
+    "GetFieldBy": "Id",
+    "ValueToFind": "TRASHBIN"
   }
 
 
