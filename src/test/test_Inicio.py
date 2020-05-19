@@ -27,7 +27,6 @@ class TestInicio(NextCloud, unittest.TestCase):
         NextCloud.get_elements(self, "P_Correo").click()
         time.sleep(2)
 
-
         NextCloud.get_elements(self, "Email").send_keys(nombre)
         NextCloud.get_elements(self, "Password").send_keys(contraseña)
 
@@ -39,7 +38,6 @@ class TestInicio(NextCloud, unittest.TestCase):
         ###################################################
         ######## EMPLIEZA AUTOMATIZACION DEL PORTAL #######
         ###################################################
-
         NextCloud.get_elements(self, "Btn_Crear+").click()
         time.sleep(3)
 
@@ -307,6 +305,10 @@ class TestInicio(NextCloud, unittest.TestCase):
 
         '''Inicio.get_elements(self, "Btn_Actividad").click()
         time.sleep(10)'''
+
+
+        #NextCloud.scroll_to(self,  "Centro de ayuda") #FUNCION SCROLL
+        #NextCloud.js_clic(self, "Centro de ayuda") #DA CLIC A UN TEXTO CON JAVASCRIPT
 
 
     def tearDown(self):

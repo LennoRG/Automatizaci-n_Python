@@ -219,6 +219,93 @@ class Functions(Inicializar):
             except NoSuchElementException(self):
                 print(u"Esperar_Elemento: No presente " + locator)
 
+    #############################################################################################################
+    ###################################    FUNCION DE SCROLL    #################################################
+    #############################################################################################################
+
+    def scroll_to(self, locator):
+        Get_Entity = Functions.get_entity(self, locator)
+
+        if Get_Entity is None:
+            return print("No se encontro el valor en el Json definido")
+        else:
+            try:
+                if self.json_GetFieldBy.lower() == "id":
+                    localizador = self.driver.find_element(By.ID, self.json_ValueToFind)
+                    self.driver.execute_script("arguments[0].scrollIntoView();", localizador)
+                    print(u"scroll_to: " + locator)
+                    return True
+
+                if self.json_GetFieldBy.lower() == "xpath":
+                    localizador = self.driver.find_element(By.XPATH, self.json_ValueToFind)
+                    self.driver.execute_script("arguments[0].scrollIntoView();", localizador)
+                    print(u"scroll_to: " + locator)
+                    return True
+
+                if self.json_GetFieldBy.lower() == "link":
+                    localizador = self.driver.find_element(By.PARTIAL_LINK_TEXT, self.json_ValueToFind)
+                    self.driver.execute_script("arguments[0].scrollIntoView();", localizador)
+                    print(u"scroll_to: " + locator)
+                    return True
+
+            except TimeoutError:
+                print(u"scroll_to: No presente" + locator)
+                Functions.tearDow(self)
+
+    ###############################################################################################################
+    ##################### FUNCIONES DE JAVASCRIPT PARA DAR CLIC EL LOS TEXTOS #####################################
+    ###############################################################################################################
+
+    def js_clic(self, locator, MyTextElement=None):
+        Get_Entity = Functions.get_entity(self, locator)
+
+        Functions.esperar_elemento(self, locator, MyTextElement)
+
+        if Get_Entity is None:
+            return print("No se encontro el valor en el Json definido")
+        else:
+            try:
+                if self.json_GetFieldBy.lower() == "id":
+                    localizador = self.driver.find_element(By.ID, self.json_ValueToFind)
+                    self.driver.execute_script("arguments[0].click();", localizador)
+                    print(u"Se hizo click en: " + locator)
+                    return True
+
+                if self.json_GetFieldBy.lower() == "xpath":
+                    if MyTextElement is not None:
+                        self.json_ValueToFind = self.json_ValueToFind.format(MyTextElement)
+                        print(self.json_ValueToFind)
+
+                        localizador = self.driver.find_element(By.XPATH, self.json_ValueToFind)
+                        self.driver.execute_script("arguments[0].click();", localizador)
+                        print(u"Se hizo click en: " + locator)
+                        return True
+
+                if self.json_GetFieldBy.lower() == "link":
+                    localizador = self.driver.find_element(By.PARTIAL_LINK_TEXT, self.json_ValueToFind)
+                    self.driver.execute_script("arguments[0].click();", localizador)
+                    print(u"Se hizo click en: " + locator)
+                    return True
+
+                if self.json_GetFieldBy.lower() == "name":
+                    localizador = self.driver.find_element(By.NAME, self.json_ValueToFind)
+                    self.driver.execute_script("arguments[0].click();", localizador)
+                    print(u"Se hizo click en: " + locator)
+                    return True
+
+                if self.json_GetFieldBy.lower() == "css":
+                    localizador = self.driver.find_element(By.CSS_SELECTOR, self.json_ValueToFind)
+                    self.driver.execute_script("arguments[0].click();", localizador)
+                    print(u"Se hizo click en: " + locator)
+                    return True
+
+            except TimeoutError:
+                print(u"js_click: No presente" + locator)
+                Functions.tearDow(self)
+
+
+
+
 
 
 

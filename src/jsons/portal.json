@@ -295,6 +295,10 @@
   "Filtro_Papelera": {
     "GetFieldBy": "Id",
     "ValueToFind": "TRASHBIN"
+  },
+  "Centro de ayuda": {
+    "GetFieldBy": "Link",
+    "ValueToFind": "Centro de ayuda"
   }
 
 
