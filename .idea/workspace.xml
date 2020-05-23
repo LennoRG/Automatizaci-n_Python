@@ -4,8 +4,6 @@
     <list default="true" id="6ae17574-e273-409b-bf48-409188ee7a18" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/fuctions/Functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/fuctions/Functions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jsons/portal.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/jsons/portal.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/test_Inicio.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/test_Inicio.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -39,7 +37,7 @@
       <file leaf-file-name="Inicializar.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/fuctions/Inicializar.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
+            <state relative-caret-position="374">
               <caret line="22" column="35" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="50" />
             </state>
           </provider>
@@ -48,7 +46,7 @@
       <file leaf-file-name="portal.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/jsons/portal.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
+            <state relative-caret-position="5066">
               <caret line="298" column="19" selection-start-line="298" selection-start-column="19" selection-end-line="298" selection-end-column="19" />
             </state>
           </provider>
@@ -57,7 +55,7 @@
       <file leaf-file-name="test_004.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/test_004.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="51">
               <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
             </state>
           </provider>
@@ -66,8 +64,8 @@
       <file leaf-file-name="test_Inicio.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/test_Inicio.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="47">
-              <caret line="18" column="18" lean-forward="true" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="42" />
+            <state relative-caret-position="170">
+              <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -75,8 +73,8 @@
       <file leaf-file-name="Functions.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/fuctions/Functions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="798">
-              <caret line="302" column="57" lean-forward="true" selection-start-line="302" selection-start-column="57" selection-end-line="302" selection-end-column="57" />
+            <state relative-caret-position="405">
+              <caret line="362" column="54" lean-forward="true" selection-start-line="362" selection-start-column="54" selection-end-line="362" selection-end-column="54" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -123,8 +121,8 @@
         <option value="$PROJECT_DIR$/src/fuctions/Inicializar.py" />
         <option value="$PROJECT_DIR$/src/jsons/portal" />
         <option value="$PROJECT_DIR$/src/jsons/portal.json" />
-        <option value="$PROJECT_DIR$/src/fuctions/Functions.py" />
         <option value="$PROJECT_DIR$/src/test/test_Inicio.py" />
+        <option value="$PROJECT_DIR$/src/fuctions/Functions.py" />
       </list>
     </option>
   </component>
@@ -150,6 +148,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -181,7 +180,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="ProjectViewState">
@@ -368,15 +366,16 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32791328" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5007163" side_tool="true" weight="0.3292683" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32838285" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32791328" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49928367" visible="true" weight="0.0" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49928367" weight="0.0" />
       <window_info anchor="bottom" id="Terminal" order="12" weight="0.75609756" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8632327" visible="true" weight="0.1580938" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8632327" visible="true" weight="0.16717096" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -674,36 +673,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/fuctions/Inicializar.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
+        <state relative-caret-position="374">
           <caret line="22" column="35" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="50" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/jsons/portal.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
+        <state relative-caret-position="5066">
           <caret line="298" column="19" selection-start-line="298" selection-start-column="19" selection-end-line="298" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/test_004.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="51">
           <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/test_Inicio.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="47">
-          <caret line="18" column="18" lean-forward="true" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="42" />
+        <state relative-caret-position="170">
+          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/fuctions/Functions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="798">
-          <caret line="302" column="57" lean-forward="true" selection-start-line="302" selection-start-column="57" selection-end-line="302" selection-end-column="57" />
+        <state relative-caret-position="405">
+          <caret line="362" column="54" lean-forward="true" selection-start-line="362" selection-start-column="54" selection-end-line="362" selection-end-column="54" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>

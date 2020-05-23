@@ -1,7 +1,10 @@
 import time
 from telnetlib import EC
 
+import openpyxl
 import pytest
+from behave.model import Scenario
+from openpyxl.utils import datetime
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver import DesiredCapabilities
 from selenium.webdriver.chrome import webdriver
@@ -13,6 +16,9 @@ from src.fuctions.Inicializar import Inicializar
 from selenium.webdriver.chrome.options import Options as OpcionesChrome
 
 import json
+Scenario = {}
+diaGlobal = time.strftime(Inicializar.DateFormat) #FORMATO aaad/mm/dd
+horaGlobal = time.strftime(Inicializar.HourFormat) #FORMATO 24 HORAS
 
 class Functions(Inicializar):
     ###### INICIALIZAR DRIVER #####
@@ -302,6 +308,66 @@ class Functions(Inicializar):
             except TimeoutError:
                 print(u"js_click: No presente" + locator)
                 Functions.tearDow(self)
+
+
+    ##############################################################################################################
+    ######################## DATA DE SCENARIOS (VUELVEE LOS TEXTOS EN VARIABLES DE SCENARIO) #####################
+    ##############################################################################################################
+    def save_variable_scenary(self, key, value):             #### FUNCIONALIDAD PARA EL EXCEL
+        Scenario[key] = value
+        print(Scenario)
+        print("Se alamceno la key " + key + " : " + value)
+
+    def save_variable_scenary(self, element, variable):
+        Scenario[variable] = Functions.get_text(self, element)
+        print(Scenario)
+        print("Se alamceno el valor " + variable + " : " + Scenario[variable])
+
+    def get_variable_scenary(self, variable):
+        self.variable = Scenario[variable]
+        print(f"get_variable_scenary: {self.variable}")
+        return self.variable
+
+    def compare_with_variable_scenary(self, element, variable):
+        variable_scenary = str(Scenario[variable])
+        element_text = str(Functions.get_text(self, element))
+        _exist = (variable_scenary in element_text)
+        print(f'Comparando los valores... Verificando que si {variable_scenary} esta presente en {element_text} : {_exist}')
+        assert variable_scenary in element_text, f'{variable_scenary} != {element_text}'
+
+    def textDateEvironmentReplace(self, text):
+        if text == 'today':
+            self.today = datetime.date.today()
+            text = self.today.strftime(Inicializar.DateFormat)
+
+        if text == 'yesterday':
+            self.today = datetime.date.today() - datetime.timedelta(days=1)
+            text = self.today.strftime(Inicializar.DateFormat)
+        return text
+
+
+    ####################################################################################
+    ##################### FUNCIONALIDADES PARA EL EXCEL ################################
+    ####################################################################################
+    def leer_celda(self, celda):
+        wb = openpyxl.load_workbook(Inicializar.Excel)
+        sheet = wb["DataTest"]       ###### NOMBRE DEL ARCHIVO EXCEL Y HOJA, GUARDAR EL EXCEL EN LA CARPETA DATA
+        valor = str(sheet[celda].value)
+        print(u"----------------------------------")
+        print(u"El libro de Excel utilizado es de: " + Inicializar.Excel)
+        print(u"El valor de la celda es: " + valor)
+        print(u"----------------------------------")
+        return  valor
+
+    def escribir_celda(self, celda, valor):
+        wb = openpyxl.load_workbook(Inicializar.Excel)
+        hoja = wb["DataTest"]
+        hoja[celda] = valor
+        wb.save(Inicializar.Excel)
+        print(u"----------------------------------")
+        print(u"El libro de Excel utilizado es de: " + Inicializar.Excel)
+        print(u"Se escribio en la celda " + str(celda) + u"el valor: " + str(valor))
+        print(u"----------------------------------")
 
 
 
