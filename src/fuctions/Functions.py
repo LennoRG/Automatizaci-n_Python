@@ -1,6 +1,9 @@
+import os
+import re
 import time
 from telnetlib import EC
 
+import allure
 import openpyxl
 import pytest
 from behave.model import Scenario
@@ -368,6 +371,42 @@ class Functions(Inicializar):
         print(u"El libro de Excel utilizado es de: " + Inicializar.Excel)
         print(u"Se escribio en la celda " + str(celda) + u"el valor: " + str(valor))
         print(u"----------------------------------")
+
+    #######################################################################################################
+    #################################### CAPTURA DE PANTALLA ##############################################
+    #######################################################################################################
+    def hora_Actual(self):
+        self.hora = time.strftime(Inicializar.HourFormat)  # FORMATO 24 HORAS
+        return self.hora
+
+    def crear_path(self):
+        dia = time.strftime("%d-%m-%Y")  #FORMATO aaaa/mm/dd
+        GeneralPath = Inicializar.Path_Envidencias
+        DriverTest = Inicializar.NAVEGADOR
+        TestCase = self.__class__.__name__
+        horaAct = horaGlobal
+        x = re.search("Context", TestCase)
+        if (x):
+            path = f"{GeneralPath}/{dia}/{DriverTest}/{horaAct}/"
+        else:
+            path = f"{GeneralPath}/{dia}/{TestCase}/{DriverTest}/{horaAct}/"
+
+        if not os.path.exists(path):    #SI NO EXISTE EL DIRECTORIO CREA
+            os.makedirs(path)
+
+        return path
+
+    def captura_pantalla(self):
+        PATH = self.crear_path()
+        TestCase = self.__class__.__name__
+        img = f'{PATH}/{TestCase}_(' + str(Functions.hora_Actual(self)) + ')' + '.png'
+        self.driver.get_screenshot_as_file(img)
+        print(img)
+        return img
+
+    def captura(self, Descripcion):
+        allure.attach(self.driver.get_screenshot_as_png(), Descripcion, attachment_type=allure.attachment_type.PNG)
+
 
 
 

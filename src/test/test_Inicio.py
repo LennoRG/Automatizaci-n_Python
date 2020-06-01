@@ -13,13 +13,14 @@ class TestInicio(NextCloud, unittest.TestCase):
 
     def setUp(self):
         NextCloud.abrir_navegador(self)
+        NextCloud.get_json_file(self, "portal")  # CARGA EL JSON CON TODOS SUS VALORES
 
 
     def testInicio(self):
         nombre = "hola0_1.test@yopmail.com"
         contraseña = "Qa123456$"
 
-        NextCloud.get_json_file(self, "portal") #CARGA EL JSON CON TODOS SUS VALORES
+        #NextCloud.get_json_file(self, "portal") #CARGA EL JSON CON TODOS SUS VALORES
 
 
         NextCloud.get_elements(self, "Btn_inicioSesion").click()
@@ -38,6 +39,8 @@ class TestInicio(NextCloud, unittest.TestCase):
         ###################################################
         ######## EMPLIEZA AUTOMATIZACION DEL PORTAL #######
         ###################################################
+        NextCloud.captura_pantalla(self)
+
         NextCloud.get_elements(self, "Btn_Crear+").click()
         time.sleep(3)
 

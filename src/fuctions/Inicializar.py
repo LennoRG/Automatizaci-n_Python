@@ -3,7 +3,8 @@ import os
 class Inicializar():
     #DIRECTORIO BASE
     basedir = os.path.abspath(os.path.join(__file__, "../.."))
-    DateFormat = "@d/@m/@Y"
+    DateFormat = '%d/%m/%Y'
+    HourFormat = "%H%M%S"
 
     #JSON Data
     Json = basedir + u'\jsons'
