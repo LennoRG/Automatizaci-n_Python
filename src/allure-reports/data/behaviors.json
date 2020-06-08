@@ -1,0 +1,25 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "Test Claro drive 01",
+    "children" : [ {
+      "name" : "Primera prueba con Allure",
+      "children" : [ {
+        "name" : "testInicio",
+        "uid" : "141f754a7b481cb4",
+        "parentUid" : "52533fe86dade6005cb42ee1476c7f48",
+        "status" : "broken",
+        "time" : {
+          "start" : 1591585913940,
+          "stop" : 1591586096307,
+          "duration" : 182367
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "52533fe86dade6005cb42ee1476c7f48"
+    } ],
+    "uid" : "dfc2e640c190cc40a4ba4a60b1cb1b39"
+  } ]
+}

@@ -1,0 +1,5 @@
+echo. ############# PRUEBAS #############
+cd .\src\test
+python -m pytest test_inicio.py --alluredir ..\allure-results
+
+pause

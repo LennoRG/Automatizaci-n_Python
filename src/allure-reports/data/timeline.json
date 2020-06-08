@@ -1,0 +1,25 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "Ramirez",
+    "children" : [ {
+      "name" : "11516-MainThread",
+      "children" : [ {
+        "name" : "testInicio",
+        "uid" : "141f754a7b481cb4",
+        "parentUid" : "5096cae35f61300f528c4df0eaf0ddfd",
+        "status" : "broken",
+        "time" : {
+          "start" : 1591585913940,
+          "stop" : 1591586096307,
+          "duration" : 182367
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5096cae35f61300f528c4df0eaf0ddfd"
+    } ],
+    "uid" : "2e5970594474071b766ec45f09f72911"
+  } ]
+}

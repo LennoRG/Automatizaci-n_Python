@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"broken","Sun Jun 07 22:11:53 CDT 2020","Sun Jun 07 22:14:56 CDT 2020","182367","","test_Inicio","TestInicio","","","testInicio","Se realizo la primera prueba para genrar un reporte en allure: </br>
+                    La prueba se realizo con exito </br>
+                    </br></br>"

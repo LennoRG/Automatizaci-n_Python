@@ -1,0 +1,39 @@
+C:\test-python-selenium\src
+----------------
+Chrome
+----------------
+get_json_file: C:\test-python-selenium\src\jsons/portal.json
+get_elements: //a[contains(@id,'login')]
+get_elements: /html/body/div[4]/app-root/app-landing-wrapper/div/app-onboarding/div[3]/app-partner/div/div[5]
+get_elements: //input[contains(@class,'InputEmail')]
+get_elements: //input[contains(@class,'InputPassword')]
+get_elements: //button[@class='Button']
+C:\test-python-selenium\src\data\capturas/07-06-2020/TestInicio/Chrome/221153//TestInicio_(221226).png
+get_elements: //div[@class='button-create-resource']
+get_elements: CreateDirect
+get_elements: /html/body/div[3]/div/app-amx-files/app-sidebar/app-upload/div/app-upload-menu/div/app-upload-menu-item[1]/div/button
+get_elements: //a[@class='close icon-close'][contains(.,'Cerrar')]
+get_elements: //div[@class='button-create-resource']
+get_elements: CreateFile
+get_elements: /html/body/div[3]/div/app-amx-files/app-sidebar/app-upload/div/app-upload-menu/div/app-upload-menu-item[4]/div/button
+get_elements: /html/body/div[3]/div/div[2]/div[2]/div[1]/button
+get_elements: /html/body/div[3]/div/div[1]/a
+get_elements: //div[@class='button-create-resource']
+get_elements: CreateDocument
+get_elements: /html/body/div[3]/div/app-amx-files/app-sidebar/app-upload/div/app-upload-menu/div/app-upload-menu-item[5]/div/button
+get_elements: //a[contains(@class,'oc-dialog-close')]
+get_elements: //div[@class='button-create-resource']
+get_elements: CreateSpreadsheet
+get_elements: /html/body/div[3]/div/app-amx-files/app-sidebar/app-upload/div/app-upload-menu/div/app-upload-menu-item[6]/div/button
+get_elements: //a[contains(@class,'oc-dialog-close')]
+get_elements: //div[@class='button-create-resource']
+get_elements: CreatePresentation
+get_elements: /html/body/div[3]/div/app-amx-files/app-sidebar/app-upload/div/app-upload-menu/div/app-upload-menu-item[7]/div/button
+get_elements: //a[contains(@class,'oc-dialog-close')]
+get_elements: /html/body/div[3]/div/app-amx-files/app-files-content/div/app-header/app-breadcrumb/div[1]
+get_elements: /html/body/div[3]/div/app-amx-files/app-files-content/div/app-header/app-breadcrumb/div[1]
+get_elements: /html/body/div[3]/div/app-amx-files/app-files-content/div/app-list[3]/app-file[1]/div/div[1]/app-menu/ul/li[1]
+get_elements: /html/body/div[3]/div/app-amx-files/app-files-content/div/app-list[3]/app-file[1]/div/div[1]/app-menu/ul/li[2]
+get_elements: /html/body/app-sharing-modal/div/div[1]/span
+get_elements: /html/body/div[3]/div/app-amx-files/app-files-content/div/app-list[3]/app-file[1]/div/div[1]/app-menu/ul/li[3]/div[1]
+SE CERRO CON EXITO EL DRIVER

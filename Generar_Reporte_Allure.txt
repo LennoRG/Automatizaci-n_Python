@@ -1,0 +1,2 @@
+cd ./src/test
+allure serve C:\test-python-selenium\src\allure-results

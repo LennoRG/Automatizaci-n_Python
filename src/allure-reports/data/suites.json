@@ -1,0 +1,25 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "test_Inicio",
+    "children" : [ {
+      "name" : "TestInicio",
+      "children" : [ {
+        "name" : "testInicio",
+        "uid" : "141f754a7b481cb4",
+        "parentUid" : "7d304f1d3f57b59eb77cd1db9c9df198",
+        "status" : "broken",
+        "time" : {
+          "start" : 1591585913940,
+          "stop" : 1591586096307,
+          "duration" : 182367
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "7d304f1d3f57b59eb77cd1db9c9df198"
+    } ],
+    "uid" : "8b3cc3ca8d75184066e6668b60a1258f"
+  } ]
+}

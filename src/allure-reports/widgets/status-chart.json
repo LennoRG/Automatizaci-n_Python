@@ -1,0 +1,11 @@
+[ {
+  "uid" : "141f754a7b481cb4",
+  "name" : "testInicio",
+  "time" : {
+    "start" : 1591585913940,
+    "stop" : 1591586096307,
+    "duration" : 182367
+  },
+  "status" : "broken",
+  "severity" : "normal"
+} ]

@@ -1,0 +1,21 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "test_Inicio",
+    "children" : [ {
+      "name" : "testInicio",
+      "uid" : "141f754a7b481cb4",
+      "parentUid" : "43906ab027ced177c3138d2bf9f9bb59",
+      "status" : "broken",
+      "time" : {
+        "start" : 1591585913940,
+        "stop" : 1591586096307,
+        "duration" : 182367
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "43906ab027ced177c3138d2bf9f9bb59"
+  } ]
+}

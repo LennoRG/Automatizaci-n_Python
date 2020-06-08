@@ -1,0 +1,22 @@
+{
+  "8c4d704481410951d3504a2e0aeba3ff" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "141f754a7b481cb4",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable\n  (Session info: chrome=83.0.4103.97)",
+      "time" : {
+        "start" : 1591585913940,
+        "stop" : 1591586096307,
+        "duration" : 182367
+      }
+    } ]
+  }
+}
