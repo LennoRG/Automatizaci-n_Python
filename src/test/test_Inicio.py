@@ -8,8 +8,8 @@ from src.fuctions.Functions import Functions as NextCloud
 import unittest
 import allure
 
-@allure.feature(u"Test Claro drive 01") #Nombre de la prueba para el reporte en allure
-@allure.story(u"Primera prueba con Allure") #Historia del Tests
+@allure.feature(u"Test Claro drive 02") #Nombre de la prueba para el reporte en allure
+@allure.story(u"Segunda prueba con Allure: Captura de Pantalla") #Historia del Tests
 @allure.testcase(u"Caso de prueba de Inicio sesion", u"Aqui se pude poner la url para conectar el testCase a Jira")
 @allure.severity(allure.severity_level.NORMAL)#Status del test case Error, Critycal etc.
 @allure.description(u"""Se realizo la primera prueba para genrar un reporte en allure: </br>
@@ -49,7 +49,8 @@ class TestInicio(NextCloud, unittest.TestCase):
              ###################################################
              ######## EMPLIEZA AUTOMATIZACION DEL PORTAL #######
              ###################################################
-             NextCloud.captura_pantalla(self)
+             NextCloud.captura(self, "Claro Drive") #CAPTURA LA PANTALLA Y LA GUARDA EN EL REPORTE DE ALLURE
+             #NextCloud.captura_pantalla(self) #CAPTURA LA PANTALLA
 
              NextCloud.get_elements(self, "Btn_Crear+").click()
              time.sleep(3)

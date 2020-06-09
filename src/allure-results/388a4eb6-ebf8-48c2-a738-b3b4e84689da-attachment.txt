@@ -1,0 +1,8 @@
+C:\test-python-selenium\src
+----------------
+Chrome
+----------------
+get_json_file: C:\test-python-selenium\src\jsons/portal.json
+get_text: No se encontro el elemento: //a[contains(@id,'login')]
+SE CERRO CON EXITO EL DRIVER
+SE CERRO CON EXITO EL DRIVER
