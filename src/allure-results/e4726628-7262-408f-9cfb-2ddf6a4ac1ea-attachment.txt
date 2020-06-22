@@ -1,0 +1,13 @@
+C:\test-python-selenium\src
+----------------
+Chrome
+----------------
+get_json_file: C:\test-python-selenium\src\jsons/portal.json
+get_elements: //a[contains(@id,'login')]
+get_elements: /html/body/div[4]/app-root/app-landing-wrapper/div/app-onboarding/div[3]/app-partner/div/div[5]
+get_elements: //input[contains(@class,'InputEmail')]
+get_elements: //input[contains(@class,'InputPassword')]
+get_elements: //button[@class='Button']
+get_text: No se encontro el elemento: //div[@class='button-create-resource']
+SE CERRO CON EXITO EL DRIVER
+SE CERRO CON EXITO EL DRIVER

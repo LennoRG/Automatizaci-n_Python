@@ -13,6 +13,7 @@ from selenium.webdriver import DesiredCapabilities
 from selenium.webdriver.chrome import webdriver
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.wait import WebDriverWait
 
 from src.fuctions.Inicializar import Inicializar
@@ -397,7 +398,7 @@ class Functions(Inicializar):
         return path
 
     def captura_pantalla(self):
-        PATH = self.crear_path()
+        PATH = Functions.crear_path(self)
         TestCase = self.__class__.__name__
         img = f'{PATH}/{TestCase}_(' + str(Functions.hora_Actual(self)) + ')' + '.png'
         self.driver.get_screenshot_as_file(img)
@@ -406,6 +407,49 @@ class Functions(Inicializar):
 
     def captura(self, Descripcion):
         allure.attach(self.driver.get_screenshot_as_png(), Descripcion, attachment_type=allure.attachment_type.PNG)
+
+
+    ##########################################################################
+    ##############       -=_TEXTBOX & COMBO HANDLE _=-   #################
+    ##########################################################################
+
+    def select_by_text(self, entity, text):
+        Functions.get_select_elements(self, entity).select_by_visible_text(text)
+
+    def send_key_text(self, entity, text):
+        Functions.get_elements(self, entity).clear()
+        Functions.get_elements(self, entity).send_keys(text)
+
+    def send_especific_keys(self, element, key):
+        if key == 'Enter':
+            Functions.get_elements(self, element).send_keys(Keys.ENTER)
+        if key == 'Tab':
+            Functions.get_elements(self, element).send_keys(Keys.TAB)
+        if key == 'Space':
+            Functions.get_elements(self, element).send_keys(Keys.SPACE)
+        time.sleep(3)
+
+    def switch_to_iframe(self, Locator):
+        iframe = Functions.get_elements(self, Locator)
+        self.driver.switch_to.frame(iframe)
+        print (f"Se realizó el switch a {Locator}")
+
+    def switch_to_parentFrame(self):
+        self.driver.switch_to.parent_frame()
+
+    def switch_to_windows_name(self, ventana):
+        if ventana in self.ventanas:
+            self.driver.switch_to.window(self.ventanas[ventana])
+            Functions.page_has_loaded(self)
+            print ("volviendo a " + ventana + " : " + self.ventanas[ventana])
+        else:
+            self.nWindows = len(self.driver.window_handles) - 1
+            self.ventanas[ventana] = self.driver.window_handles[int(self.nWindows)]
+            self.driver.switch_to.window(self.ventanas[ventana])
+            self.driver.maximize_window()
+            print(self.ventanas)
+            print("Estas en " + ventana + " : " + self.ventanas[ventana])
+            Functions.page_has_loaded(self)
 
 
 

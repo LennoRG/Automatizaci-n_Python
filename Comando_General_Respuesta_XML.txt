@@ -1,0 +1,2 @@
+cd .\src\test
+python -m pytest test_inicio.py --junit-xml=../results/results.xml

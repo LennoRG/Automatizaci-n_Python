@@ -205,7 +205,7 @@ class TestInicio(NextCloud, unittest.TestCase):
              time.sleep(3)
              NextCloud.get_elements(self, "Check_Carpeta").click()  #DESELECCIONO CARPETA
              time.sleep(3)
-             NextCloud.get_elements(self, "Mover_Papelera_Carpeta").click()  #ELIMONO CARPETA
+             NextCloud.get_elements(self, "Mover_Papelera_Carpeta").click()  #ELIMINO CARPETA
              time.sleep(3)
 
              #FUNCIONALIDADES HEADER LIST_VIEW
