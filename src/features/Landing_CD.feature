@@ -28,6 +28,42 @@ Feature: Funciones de Landing Claro drive
     Then I click Header_Descargar
     And I clic Menu_List_Imagenes
     Then I compare actions of BTNS filters
+    And I click Reciente
+    Then I click Favoritos
+    Then I click Imagenes
+    Then I click Videos
+    Then I click Contactos
+    Then I click Compartidos
+    And I click Te compartieron
+    And I click Compartiste
+    And I click Ligas compartidas
+    Then I click Etiquetas
+    Then I click Papelera
+    Then I click Todo los archivos
+
+    Then I click Seccion Actividad
+    And I click Por usted
+    Then I click Por otros
+    Then I click Favoritos_Actividad
+    Then I click Cambios al archivo
+    Then I click Seguridad
+    Then I click Archivos compartidos
+    Then I click Comentarios
+    Then I click Descargar la app
+    Then I click Legales
+
+    Then I click Gallery
+    And I click Orden_Gallery
+    Then I click Todo_Gallery
+    Then I click Albumes_Gallery
+    Then I click Compartido_Gallery
+
+
+
+
+
+
+
 
 
 

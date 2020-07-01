@@ -296,6 +296,94 @@
     "GetFieldBy": "Id",
     "ValueToFind": "TRASHBIN"
   },
+  "Te_compartieron": {
+    "GetFieldBy": "Id",
+    "ValueToFind": "SHARED_WITH_ME"
+  },
+  "Compartiste": {
+    "GetFieldBy": "Id",
+    "ValueToFind": "SHARED_BY_ME"
+  },
+  "Ligas_compartidas": {
+    "GetFieldBy": "Id",
+    "ValueToFind": "SHARED_BY_LINK"
+  },
+
+
+  "Todas_las_Actividades": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[3]/div/app-activity/app-activity-sidebar/div/div[1]"
+  },
+  "Por_Usted": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[3]/div/app-activity/app-activity-sidebar/div/div[2]"
+  },
+  "Por_Otros": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[3]/div/app-activity/app-activity-sidebar/div/div[3]"
+  },
+  "Favoritos_Actividad": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[3]/div/app-activity/app-activity-sidebar/div/div[4]"
+  },
+  "Cambios_al_Archivo": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[3]/div/app-activity/app-activity-sidebar/div/div[5]"
+  },
+  "Seguridad": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[3]/div/app-activity/app-activity-sidebar/div/div[6]"
+  },
+   "Archivos_compartido": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[3]/div/app-activity/app-activity-sidebar/div/div[7]"
+  },
+  "Comentarios": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[3]/div/app-activity/app-activity-sidebar/div/div[8]"
+  },
+  "Ver_detalle": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "(//div[@class='activity-detail-btn'][contains(.,'Ver detalle')])[1]"
+  },
+  "Descarga_la_app_Actividad": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[3]/div/app-activity/app-activity-sidebar/app-external-links/div/div[1]"
+  },
+  "Legales_Actividad": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[3]/div/app-activity/app-activity-sidebar/app-external-links/div/div[2]"
+  },
+
+  "Gallery": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/header/div[1]/ul/li[3]/a"
+  },
+  "Orden_Gallery": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[3]/div/app-gallery/app-gallery-options/div/div[1]/a[1]"
+  },
+  "Mas_Antiguo": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[3]/div/app-gallery/app-gallery-options/div/div[1]/div/ul/li[2]"
+  },
+  "Mas_Reciente": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[3]/div/app-gallery/app-gallery-options/div/div[1]/div/ul/li[2]"
+  },
+  "Todo_Gallery": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[3]/div/app-gallery/app-gallery-options/div/div[2]/div/div[1]"
+  },
+  "Albumes_Gallery": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[3]/div/app-gallery/app-gallery-options/div/div[2]/div/div[2]"
+  },
+  "Compartido_Gallery": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[3]/div/app-gallery/app-gallery-options/div/div[2]/div/div[3]"
+  },
+
   "Centro de ayuda": {
     "GetFieldBy": "Link",
     "ValueToFind": "Centro de ayuda"

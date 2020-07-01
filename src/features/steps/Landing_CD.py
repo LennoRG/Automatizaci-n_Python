@@ -203,7 +203,7 @@ class Landing_CD(Buzon):
     @step("I click Mover Carpeta a Papelera")
     def step_impl(self):
         Buzon.get_elements(self, "Mover_Papelera_Carpeta").click()  #ELIMINO CARPETA
-        time.sleep(20)
+        time.sleep(3)
 
 
     @then("I click Check_Header_list_view")
@@ -315,3 +315,198 @@ class Landing_CD(Buzon):
         assert Buzon.get_text(self, "Filtro_Papelera") == "Papelera"
         assert Buzon.get_text(self, "Filtro_Etiquetas") == "Etiquetas"
         ############### FUNCIONALIDADES DE LA LISTA DE OPCIONES EN IMAGENES EN ARCHIVOS RECIENTES ############
+
+
+    @step("I click Reciente")
+    def step_impl(self):
+        Buzon.get_elements(self, "Filtro_RECIENTE").click()
+        time.sleep(5)
+
+
+    @then("I click Favoritos")
+    def step_impl(self):
+        Buzon.get_elements(self, "Filtro_Favoritos").click()
+        time.sleep(5)
+
+
+    @then("I click Imagenes")
+    def step_impl(self):
+        Buzon.get_elements(self, "Filtro_Imagenes").click()
+        time.sleep(5)
+
+
+    @then("I click Videos")
+    def step_impl(self):
+        Buzon.get_elements(self, "Filtro_Videos").click()
+        time.sleep(5)
+
+
+    @then("I click Contactos")
+    def step_impl(self):
+        Buzon.get_elements(self, "Filtro_Contactos").click()
+        time.sleep(5)
+
+
+    @then("I click Compartidos")
+    def step_impl(self):
+        Buzon.get_elements(self, "Filtro_Compartidos").click()
+
+
+    @step("I click Te compartieron")
+    def step_impl(self):
+        Buzon.get_elements(self, "Te_compartieron").click()
+        time.sleep(5)
+
+
+    @step("I click Compartiste")
+    def step_impl(self):
+        Buzon.get_elements(self, "Compartiste").click()
+        time.sleep(5)
+
+
+    @step("I click Ligas compartidas")
+    def step_impl(self):
+        Buzon.get_elements(self, "Ligas_compartidas").click()
+        time.sleep(5)
+
+
+    @then("I click Etiquetas")
+    def step_impl(self):
+        Buzon.get_elements(self, "Filtro_Etiquetas").click()
+        time.sleep(5)
+
+
+    @then("I click Papelera")
+    def step_impl(self):
+        Buzon.get_elements(self, "Filtro_Papelera").click()
+        time.sleep(5)
+
+
+    @then("I click Todo los archivos")
+    def step_impl(self):
+        Buzon.get_elements(self, "Filtro_ALL_ARCHIVOS").click()
+        time.sleep(8)
+
+
+    @then("I click Seccion Actividad")
+    def step_impl(self):
+        Buzon.get_elements(self, "Btn_Actividad").click()
+        time.sleep(10)
+
+        assert Buzon.get_text(self, "Todas_las_Actividades") == "Todas las actividades"
+        assert Buzon.get_text(self, "Por_Usted") == "Por usted"
+        assert Buzon.get_text(self, "Por_Otros") == "Por otros"
+        assert Buzon.get_text(self, "Favoritos_Actividad") == "Favoritos"
+        assert Buzon.get_text(self, "Cambios_al_Archivo") == "Cambios al archivo"
+        assert Buzon.get_text(self, "Seguridad") == "Seguridad"
+        assert Buzon.get_text(self, "Archivos_compartido") == "Archivos compartidos"
+        assert Buzon.get_text(self, "Comentarios") == "Comentarios"
+        time.sleep(3)
+
+        '''Buzon.get_elements(self, "Ver_detalle").click()
+        time.sleep(3)
+        Buzon.get_elements(self, "Ver_detalle").click()
+        time.sleep(3)'''
+
+
+    @step("I click Por usted")
+    def step_impl(self):
+        Buzon.get_elements(self, "Por_Usted").click()
+        time.sleep(3)
+
+
+    @then("I click Por otros")
+    def step_impl(self):
+        Buzon.get_elements(self, "Por_Otros").click()
+        time.sleep(3)
+
+
+    @then("I click Favoritos_Actividad")
+    def step_impl(self):
+        Buzon.get_elements(self, "Favoritos_Actividad").click()
+        time.sleep(3)
+
+
+    @then("I click Cambios al archivo")
+    def step_impl(self):
+        Buzon.get_elements(self, "Cambios_al_Archivo").click()
+        time.sleep(3)
+
+
+    @then("I click Seguridad")
+    def step_impl(self):
+        Buzon.get_elements(self, "Seguridad").click()
+        time.sleep(3)
+
+
+
+    @then("I click Archivos compartidos")
+    def step_impl(self):
+        Buzon.get_elements(self, "Archivos_compartido").click()
+        time.sleep(3)
+
+
+
+    @then("I click Comentarios")
+    def step_impl(self):
+        Buzon.get_elements(self, "Comentarios").click()
+        time.sleep(3)
+
+
+    @then("I click Descargar la app")
+    def step_impl(self):
+        Buzon.get_elements(self, "Descarga_la_app_Actividad").click()
+        time.sleep(4)
+        Buzon.get_elements(self, "Btn_Actividad").click()
+        time.sleep(8)
+
+
+
+    @then("I click Legales")
+    def step_impl(self):
+        Buzon.get_elements(self, "Legales_Actividad").click()
+        time.sleep(4)
+
+        Buzon.get_elements(self, "Btn_Actividad").click()
+        time.sleep(5)
+
+
+    @then("I click Gallery")
+    def step_impl(self):
+        Buzon.get_elements(self, "Gallery").click()
+        time.sleep(10)
+
+
+
+    @step('I click Orden_Gallery')
+    def step_impl(self):
+        Buzon.get_elements(self, "Orden_Gallery").click()
+        time.sleep(5)
+
+        Buzon.get_elements(self, "Mas_Antiguo").click()
+        time.sleep(5)
+
+        Buzon.get_elements(self, "Orden_Gallery").click()
+        time.sleep(5)
+
+        Buzon.get_elements(self, "Mas_Reciente").click()
+        time.sleep(4)
+
+
+    @then("I click Todo_Gallery")
+    def step_impl(self):
+        Buzon.get_elements(self, "Todo_Gallery").click()
+        time.sleep(7)
+
+
+    @then("I click Albumes_Gallery")
+    def step_impl(self):
+        Buzon.get_elements(self, "Albumes_Gallery").click()
+        time.sleep(7)
+
+
+
+    @then("I click Compartido_Gallery")
+    def step_impl(self):
+        Buzon.get_elements(self, "Compartido_Gallery").click()
+        time.sleep(7)
