@@ -384,6 +384,198 @@
     "ValueToFind": "/html/body/div[3]/div/app-gallery/app-gallery-options/div/div[2]/div/div[3]"
   },
 
+
+  "Espacio_Familiar": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/header/div[1]/ul/li[4]/a"
+  },
+
+  "Informacion_Personal": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[3]/div/div[1]/ul/li[1]"
+  },
+  "Espacio_Fam_Seguridad": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[3]/div/div[1]/ul/li[2]"
+  },
+  "Espacio_Fam_Actividad": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[3]/div/div[1]/ul/li[3]"
+  },
+  "Informacion_Pago": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[3]/div/div[1]/ul/li[4]"
+  },
+  "Ajuste_ClaroDrive": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[3]/div/div[1]/ul/li[6]"
+  },
+  "Configuraciones_Adicionales": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[3]/div/div[1]/ul/li[7]"
+  },
+
+  "Info_CambiarNombre": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[3]/div/div[2]/div[4]/div[2]/div[1]/form/input"
+  },
+  "Boton_GuardarCambios": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[3]/div/div[2]/div[4]/div[2]/div[3]/div/button"
+  },
+  "Seleccionar_FotoUser": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[3]/div/div[2]/div[4]/div[1]/div[1]/form/div[1]/div[3]"
+  },
+  "Elegir_FotoUser": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[7]/div[1]/div/table/tbody/tr[1]"
+  },
+  "Boton_Seleccionar": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[7]/div[2]/button"
+  },
+  "Boton_Seleccionar_Foto_Perfil": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[3]/div/div[2]/div[4]/div[1]/div[1]/form/div[3]/div/div[3]"
+  },
+  "Eliminar_Foto_Perfil": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[3]/div/div[2]/div[4]/div[1]/div[1]/form/div[1]/div[4]"
+  },
+  "Contra_Actual": {
+    "GetFieldBy": "Id",
+    "ValueToFind": "pass1"
+  },
+  "Contra_Nueva": {
+    "GetFieldBy": "Id",
+    "ValueToFind": "pass2"
+  },
+   "Btn_Cambiar_Contra": {
+    "GetFieldBy": "Id",
+    "ValueToFind": "passwordbutton"
+  },
+  "Ver/Ocultar_Contra": {
+    "GetFieldBy": "Id",
+    "ValueToFind": "passwordbutton"
+  },
+   "Actvidad_Desactivar_Chekbox": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[3]/div/div[2]/form/table/tbody/tr[1]/td[2]/label"
+  },
+
+  "Archivo_ON/OFF_Chekbox": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[3]/div/div[2]/div[2]/div/label"
+  },
+
+
+  "PlanFam_AddUser": {
+    "GetFieldBy": "Id",
+    "ValueToFind": "add-user"
+  },
+  "Caja_Email": {
+    "GetFieldBy": "Id",
+    "ValueToFind": "FPA_Email"
+  },
+
+  "BTN_Confirmar": {
+    "GetFieldBy": "Id",
+    "ValueToFind": "confirmar"
+  },
+   "BTN_ReenviarInvitacion": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[3]/div/div[2]/div[2]/app-amx-family-plan/div/app-member-list/div/app-member[2]/div/div[4]/button[1]"
+  },
+  "Popup_BTN_ReenviarInvitacion": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/app-modal/div/div/app-modal-layout/div[2]/button[1]"
+  },
+  "BTN_CancelarInvita": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[3]/div/div[2]/div[2]/app-amx-family-plan/div/app-member-list/div/app-member[2]/div/div[4]/button[2]"
+
+  },
+  "Popup_BTN_CancelarInvitacion": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/app-modal/div/div/app-modal-layout/div[2]/button[1]"
+  },
+
+
+  "Avatar_Perfil": {
+    "GetFieldBy": "Id",
+    "ValueToFind": "settings"
+  },
+  "Ajustes": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/header/div[2]/div[3]/nav/ul/li[1]"
+  },
+  "Ayuda": {
+    "GetFieldBy": "Id",
+    "ValueToFind": "external_index2"
+  },
+  "Logout": {
+    "GetFieldBy": "Id",
+    "ValueToFind": "logout"
+  },
+
+
+
+   "ActivarCompartir": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/app-sharing-modal/div/div[1]/app-sharing/div/app-general-view/div/app-sharing-link/div/switch/label/span"
+  },
+  "BTN_CopiarLiga": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/app-sharing-modal/div/div[1]/app-sharing/div/app-general-view/div/app-sharing-link/app-sharing-link-form/form/div[1]/button"
+  },
+  "Checkbox_PuedeEditar": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/app-sharing-modal/div/div[1]/app-sharing/div/app-general-view/div/app-sharing-link/app-sharing-link-form/form/div[2]/div/input"
+  },
+  "PassDeLiga": {
+    "GetFieldBy": "Id",
+    "ValueToFind": "password"
+  },
+  "Caja_Vigencia": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/app-sharing-modal/div/div[1]/app-sharing/div/app-general-view/div/app-sharing-link/app-sharing-link-form/form/div[3]/div[2]/date-picker"
+  },
+  "Caja_CorreoElectronico": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/app-sharing-modal/div/div[1]/app-sharing/div/app-general-view/div/app-sharing-with/div[1]/app-choices-multiselect/div[1]"
+  },
+  "EscribirCorreo": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/app-sharing-modal/div/div[1]/app-sharing/div/app-general-view/div/app-sharing-with/div[1]/app-choices-multiselect/div[1]/input"
+
+  },
+  "Icono_Editar": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/app-sharing-modal/div/div[1]/app-sharing/div/app-general-view/div/app-sharing-with/div[1]/div[1]/span"
+  },
+  "Icono_Regresar": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "@FindBy(xpath = '1')"
+  },
+  "BTN_Aceptar": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/app-sharing-modal/div/div[1]/app-sharing/div/app-general-view/div/app-sharing-link/app-sharing-link-form/form/div[4]/button[2]"
+  },
+  "BTN_Cancelar": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/app-sharing-modal/div/div[1]/app-sharing/div/app-general-view/div/app-sharing-link/app-sharing-link-form/form/div[4]/button[1]"
+  },
+  "ComentariosCompartir": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/app-sharing-modal/div/div[1]/app-sharing/div/app-general-view/div/app-sharing-with/div[2]/textarea"
+  },
+
+
+
+
+
+
   "Centro de ayuda": {
     "GetFieldBy": "Link",
     "ValueToFind": "Centro de ayuda"

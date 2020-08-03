@@ -1,0 +1,216 @@
+{
+  "BTN_IniciaSesion": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[4]/app-root/app-landing-wrapper/app-nav-bar/div/div/app-menu-logreg/div/a[2]"
+  },
+  "Partner_Telmex": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[4]/app-root/app-landing-wrapper/div/app-onboarding/div[3]/app-partner/div/div[1]"
+  },
+  "Partner_Telcel": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[4]/app-root/app-landing-wrapper/div/app-onboarding/div[3]/app-partner/div/div[2]"
+  },
+  "Partner_ClaroMusica": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[4]/app-root/app-landing-wrapper/div/app-onboarding/div[3]/app-partner/div/div[3]"
+  },
+  "Partner_ClaroVideo": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[4]/app-root/app-landing-wrapper/div/app-onboarding/div[3]/app-partner/div/div[4]"
+  },
+  "Correo": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[4]/app-root/app-landing-wrapper/div/app-onboarding/div[3]/app-partner/div/div[5]"
+  },
+  "BTN_IniciarSesion": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[4]/app-root/app-landing-wrapper/div/app-onboarding/div[3]/app-partner/app-login/app-telmex-login/app-form-simple/form/div[2]/app-button/button"
+  },
+  "OlvidasteContra": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "(//button[contains(@class,'ButtonText')])[1]"
+  },
+  "Cancelar": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[4]/app-root/app-landing-wrapper/div/app-onboarding/div[3]/app-partner/app-login/app-telmex-login/app-button-text[2]"
+  },
+  "Enviar_Contra": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[4]/app-root/app-landing-wrapper/div/app-onboarding/div[2]/app-reset-password/app-reset-password-recovery/form/app-button/button"
+  },
+  "VolverInicio": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[4]/app-root/app-landing-wrapper/div/app-onboarding/div[2]/app-reset-password/app-reset-password-recovery/app-button-text/button"
+  },
+  "TerminosCond": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[4]/app-root/app-landing-wrapper/div/app-onboarding/div[3]/app-partner/app-login/app-mail-register/app-form-simple/form/div[2]/div/span/a[1]"
+  },
+  "PoliticaPrivacidad": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[4]/app-root/app-landing-wrapper/div/app-onboarding/div[3]/app-partner/app-login/app-mail-register/app-form-simple/form/div[2]/div/span/a[2]"
+  },
+  "Registrarme": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[4]/app-root/app-landing-wrapper/app-nav-bar/div/div/app-menu-logreg/div/a[1]"
+  },
+  "BTN_Registrarme": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[4]/app-root/app-landing-wrapper/div/app-onboarding/div[3]/app-partner/app-login/app-mail-register/app-form-simple/form/div[2]/app-button/button"
+  },
+  "BTN_Cancelar": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[4]/app-root/app-landing-wrapper/div/app-onboarding/div[3]/app-partner/app-login/app-mail-register/app-button-text/button"
+  },
+
+
+  "Descubre": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[4]/app-root/app-landing-wrapper/app-nav-bar/div/div/app-menu-navbar/div/div[1]"
+  },
+  "Comparte": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[4]/app-root/app-landing-wrapper/app-nav-bar/div/div/app-menu-navbar/div/div[2]"
+  },
+  "Respalda": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[4]/app-root/app-landing-wrapper/app-nav-bar/div/div/app-menu-navbar/div/div[3]"
+  },
+  "Descarga": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[4]/app-root/app-landing-wrapper/app-nav-bar/div/div/app-menu-navbar/div/div[4]"
+  },
+  "Descarga_GooglePlay": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[4]/app-root/app-landing-wrapper/app-container4/div/div/div[2]/a[1]"
+  },
+  "Descarga_AppStore": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[4]/app-root/app-landing-wrapper/app-container4/div/div/div[2]/a[2]"
+  },
+  "Descarga_ClaroDrive": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[4]/app-root/app-landing-wrapper/app-container4/div/div/div[2]/a[3]"
+  },
+  "Descarga_ClaroDrive_Imagen": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[1]/div/header/div/a/img"
+  },
+  "Opciones": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[4]/app-root/app-landing-wrapper/app-nav-bar/div/div/app-menu-navbar/div/div[5]"
+  },
+  "Opciones_Telmex": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[4]/app-root/app-landing-wrapper/app-container5/div/div/div[2]/a[1]"
+  },
+  "Opciones_Telcel": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[4]/app-root/app-landing-wrapper/app-container5/div/div/div[2]/a[2]"
+  },
+  "Opciones_CM": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[4]/app-root/app-landing-wrapper/app-container5/div/div/div[2]/a[3]"
+  },
+  "Opciones_CV": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[4]/app-root/app-landing-wrapper/app-container5/div/div/div[2]/a[4]"
+  },
+  "Opciones_Correo": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[4]/app-root/app-landing-wrapper/app-container5/div/div/div[2]/a[5]"
+  },
+
+
+  "Planes": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[4]/app-root/app-landing-wrapper/app-nav-bar/div/div/app-menu-navbar/div/div[6]"
+  },
+  "Planes_Correo": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[4]/app-root/app-landing-wrapper/app-container6/div/div/app-offer/div/app-payment-methods/div/div[3]"
+  },
+  "Planes_Telmex": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[4]/app-root/app-landing-wrapper/app-container6/div/div/app-offer/div/app-payment-methods/div/div[2]"
+  },
+  "Planes_Telcel": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[4]/app-root/app-landing-wrapper/app-container6/div/div/app-offer/div/app-payment-methods/div/div[1]"
+  },
+
+
+  "Negocio": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[4]/app-root/app-landing-wrapper/app-nav-bar/div/div/app-menu-navbar/div/div[7]"
+  },
+  "Negocio_Caracteristicas": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[3]/app-root/app-microsite-wrapper/app-nav-bar/div/div/app-menu-navbar/div/div[1]"
+  },
+  "Negocio_Descarga": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[3]/app-root/app-microsite-wrapper/app-nav-bar/div/div/app-menu-navbar/div/div[2]"
+  },
+  "Negocio_Planes": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[3]/app-root/app-microsite-wrapper/app-nav-bar/div/div/app-menu-navbar/div/div[3]"
+  },
+  "Negocio_ClaroDrive": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[3]/app-root/app-microsite-wrapper/app-nav-bar/div/div/app-menu-navbar/div/div[4]"
+  },
+
+
+  "Footer_CentroAyuda": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[4]/app-root/app-landing-wrapper/app-footer-landing/footer/div[1]/div[2]"
+  },
+  "Footer_CorreoElectronico": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[4]/app-root/app-landing-wrapper/app-footer-landing/footer/div[1]/a"
+  },
+  "Footer_Telmex": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[4]/app-root/app-landing-wrapper/app-footer-landing/footer/div[2]/a[1]"
+  },
+  "Footer_Telcel": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[4]/app-root/app-landing-wrapper/app-footer-landing/footer/div[2]/a[2]"
+  },
+  "Footer_TDC": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[4]/app-root/app-landing-wrapper/app-footer-landing/footer/div[2]/a[3]"
+  },
+  "Footer_Acercade": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[4]/app-root/app-landing-wrapper/app-footer-landing/footer/div[3]/a[1]"
+  },
+  "Footer_TerminosCondiciones": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[4]/app-root/app-landing-wrapper/app-footer-landing/footer/div[3]/a[2]"
+  },
+  "Footer_PoliticaPrivacidad": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[4]/app-root/app-landing-wrapper/app-footer-landing/footer/div[3]/a[3]"
+  },
+  "Footer_GooglePlay": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[4]/app-root/app-landing-wrapper/app-footer-landing/footer/div[4]/a[1]"
+  },
+  "Footer_AppStore": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[4]/app-root/app-landing-wrapper/app-footer-landing/footer/div[4]/a[2]"
+  },
+  "Footer_DesktopWindMac": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[4]/app-root/app-landing-wrapper/app-footer-landing/footer/div[4]/a[3]"
+  },
+
+  "Logo_ClaroDrive": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[1]/div/header/div/a/img"
+  }
+
+}

@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ae17574-e273-409b-bf48-409188ee7a18" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/features/Buzon_CD.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/features/steps/Buzon_CD.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jsons/landing.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/Landing_CD.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Landing_CD.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/steps/Landing_CD.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/steps/Landing_CD.py" afterDir="false" />
@@ -24,38 +27,28 @@
     <SUITE FILE_PATH="coverage/test_python_selenium$Inicializar.coverage" NAME="Inicializar Coverage Results" MODIFIED="1588555973854" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/fuctions" />
     <SUITE FILE_PATH="coverage/test_python_selenium$testRudimentario.coverage" NAME="testRudimentario Coverage Results" MODIFIED="1587227098841" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/test" />
     <SUITE FILE_PATH="coverage/test_python_selenium$hola.coverage" NAME="hola Coverage Results" MODIFIED="1586668130722" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/test" />
-    <SUITE FILE_PATH="coverage/test_python_selenium$Landing_CD_feature.coverage" NAME="Landing_CD.feature Coverage Results" MODIFIED="1593126411850" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/test_python_selenium$Landing_CD_feature.coverage" NAME="Landing_CD.feature Coverage Results" MODIFIED="1596081007565" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/test_python_selenium$tst_001.coverage" NAME="tst_001 Coverage Results" MODIFIED="1586663962601" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/test" />
     <SUITE FILE_PATH="coverage/test_python_selenium$landing.coverage" NAME="landing Coverage Results" MODIFIED="1587346228350" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/test" />
     <SUITE FILE_PATH="coverage/test_python_selenium$test_002.coverage" NAME="test_002 Coverage Results" MODIFIED="1586670078844" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/test" />
     <SUITE FILE_PATH="coverage/test_python_selenium$Landing_CD_feature_Boton_Crear_.coverage" NAME="Landing_CD.feature:Boton Crear+ Coverage Results" MODIFIED="1592337391640" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/test_python_selenium$Unittests_in_test_Inicio_py.coverage" NAME="Unittests in test_Inicio.py Coverage Results" MODIFIED="1592333029772" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/test" />
+    <SUITE FILE_PATH="coverage/test_python_selenium$Buzon_CD_feature.coverage" NAME="Buzon_CD.feature Coverage Results" MODIFIED="1596426682352" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/test_python_selenium$Unittests_for_tst_001_test_001.coverage" NAME="Unittests for tst_001.test_001 Coverage Results" MODIFIED="1586663919448" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/test" />
     <SUITE FILE_PATH="coverage/test_python_selenium$Functions.coverage" NAME="Functions Coverage Results" MODIFIED="1588568793394" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/fuctions" />
     <SUITE FILE_PATH="coverage/test_python_selenium$test_004.coverage" NAME="test_004 Coverage Results" MODIFIED="1588484544934" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/test" />
     <SUITE FILE_PATH="coverage/test_python_selenium$Unittests_in_testLanding_001_py.coverage" NAME="Unittests in testLanding_001.py Coverage Results" MODIFIED="1588550959049" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/test" />
+    <SUITE FILE_PATH="coverage/test_python_selenium$Landing_CD__1_.coverage" NAME="Landing_CD (1) Coverage Results" MODIFIED="1594855130343" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/features/steps" />
     <SUITE FILE_PATH="coverage/test_python_selenium$Unittests_for_test_Inicio_TestInicio.coverage" NAME="Unittests for test_Inicio.TestInicio Coverage Results" MODIFIED="1588557380366" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/test" />
-    <SUITE FILE_PATH="coverage/test_python_selenium$Landing_CD.coverage" NAME="Landing_CD Coverage Results" MODIFIED="1592333837396" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/features/steps" />
+    <SUITE FILE_PATH="coverage/test_python_selenium$Landing_CD.coverage" NAME="Landing_CD Coverage Results" MODIFIED="1593579048066" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/features/steps" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="Inicializar.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/fuctions/Inicializar.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
+            <state>
               <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test_004.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/test_004.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1040">
-              <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="39" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -63,8 +56,8 @@
       <file leaf-file-name="Functions.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/fuctions/Functions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="449">
-              <caret line="127" column="52" lean-forward="true" selection-start-line="127" selection-start-column="52" selection-end-line="127" selection-end-column="56" />
+            <state relative-caret-position="73">
+              <caret line="110" lean-forward="true" selection-start-line="110" selection-end-line="110" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -72,32 +65,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_Inicio.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/test_Inicio.py">
+      <file leaf-file-name="Buzon_CD.feature" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/features/Buzon_CD.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1874">
-              <caret line="155" column="38" lean-forward="true" selection-start-line="155" selection-start-column="27" selection-end-line="155" selection-end-column="38" />
-              <folding>
-                <element signature="e#24#35#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="16">
+              <caret line="17" column="24" lean-forward="true" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Landing_CD.feature" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/features/Landing_CD.feature">
+      <file leaf-file-name="Buzon_CD.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/features/steps/Buzon_CD.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="43" column="34" lean-forward="true" selection-start-line="43" selection-start-column="34" selection-end-line="43" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Landing_CD.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/features/steps/Landing_CD.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4563">
-              <caret line="476" column="22" lean-forward="true" selection-start-line="476" selection-start-column="22" selection-end-line="476" selection-end-column="22" />
+            <state relative-caret-position="102">
+              <caret line="722" column="20" selection-start-line="722" selection-start-column="20" selection-end-line="722" selection-end-column="20" />
               <folding>
                 <element signature="e#24#35#0" expanded="true" />
               </folding>
@@ -108,8 +89,38 @@
       <file leaf-file-name="portal.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/jsons/portal.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
-              <caret line="359" column="55" selection-start-line="359" selection-start-column="55" selection-end-line="359" selection-end-column="55" />
+            <state relative-caret-position="136">
+              <caret line="493" column="2" lean-forward="true" selection-start-line="493" selection-start-column="2" selection-end-line="493" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Landing_CD.feature" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/features/Landing_CD.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-7">
+              <caret line="62" column="49" lean-forward="true" selection-start-line="62" selection-start-column="49" selection-end-line="62" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="landing.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/jsons/landing.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="191" lean-forward="true" selection-start-line="191" selection-end-line="191" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Landing_CD.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/features/steps/Landing_CD.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="186">
+              <caret line="414" lean-forward="true" selection-start-line="414" selection-end-line="414" />
+              <folding>
+                <element signature="e#24#35#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -156,8 +167,11 @@
         <option value="$PROJECT_DIR$/src/test/test_Inicio.py" />
         <option value="$PROJECT_DIR$/src/fuctions/Functions.py" />
         <option value="$PROJECT_DIR$/src/features/Landing_CD.feature" />
+        <option value="$PROJECT_DIR$/src/jsons/landing.json" />
         <option value="$PROJECT_DIR$/src/features/steps/Landing_CD.py" />
+        <option value="$PROJECT_DIR$/src/features/Buzon_CD.feature" />
         <option value="$PROJECT_DIR$/src/jsons/portal.json" />
+        <option value="$PROJECT_DIR$/src/features/steps/Buzon_CD.py" />
       </list>
     </option>
   </component>
@@ -171,10 +185,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1742" />
-    <option name="y" value="148" />
-    <option name="width" value="1026" />
-    <option name="height" value="546" />
+    <option name="x" value="1233" />
+    <option name="y" value="105" />
+    <option name="width" value="1378" />
+    <option name="height" value="735" />
   </component>
   <component name="ProjectId" id="1aNgDrwlqYowknYrsrfXTkw4iJd" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -214,6 +228,12 @@
               <item name="test-python-selenium" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="jsons" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test-python-selenium" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test-python-selenium" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -256,7 +276,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Behave.Landing_CD.feature">
+  <component name="RunManager" selected="Behave.Buzon_CD.feature">
+    <configuration name="Buzon_CD.feature" type="PyBehaveRunConfigurationType" factoryName="Behave" temporary="true">
+      <module name="test-python-selenium" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <WHAT_TO_RUN WHAT_TO_RUN="$PROJECT_DIR$/src/features/Buzon_CD.feature" />
+      <option name="ADDITIONAL_ARGS" value="" />
+    </configuration>
     <configuration name="Landing_CD.feature" type="PyBehaveRunConfigurationType" factoryName="Behave" temporary="true">
       <module name="test-python-selenium" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -284,7 +317,7 @@
       <SCENRAIO_NAMES SCENRAIO_NAMES="Boton Crear+" />
       <option name="ADDITIONAL_ARGS" value="" />
     </configuration>
-    <configuration name="Landing_CD" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Landing_CD (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="test-python-selenium" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -303,48 +336,39 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="Unittests for test_Inicio.TestInicio.testInicio" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Landing_CD" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="test-python-selenium" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/test" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/features/steps" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_Inicio.TestInicio.testInicio&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-    </configuration>
-    <configuration name="Unittests in test_Inicio.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="test-python-selenium" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/src/test/test_Inicio.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <option name="SCRIPT_NAME" value="C:\test-python-selenium\src\features\steps\Buzon_CD.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
     </configuration>
     <list>
-      <item itemvalue="Python tests.Unittests in test_Inicio.py" />
-      <item itemvalue="Python tests.Unittests for test_Inicio.TestInicio.testInicio" />
       <item itemvalue="Behave.Landing_CD.feature" />
       <item itemvalue="Python.Landing_CD" />
       <item itemvalue="Behave.Landing_CD.feature:Boton Crear+" />
+      <item itemvalue="Behave.Buzon_CD.feature" />
+      <item itemvalue="Python.Landing_CD (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Behave.Buzon_CD.feature" />
         <item itemvalue="Behave.Landing_CD.feature" />
-        <item itemvalue="Behave.Landing_CD.feature:Boton Crear+" />
+        <item itemvalue="Python.Landing_CD (1)" />
         <item itemvalue="Python.Landing_CD" />
-        <item itemvalue="Python tests.Unittests in test_Inicio.py" />
-        <item itemvalue="Python tests.Unittests for test_Inicio.TestInicio.testInicio" />
+        <item itemvalue="Behave.Landing_CD.feature:Boton Crear+" />
       </list>
     </recent_temporary>
   </component>
@@ -362,35 +386,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Landing_CD_feature - 2020.06.25 at 15h 47m 53s.xml">
-      <configuration name="Landing_CD.feature" configurationId="PyBehaveRunConfigurationType" />
+    <history-entry file="Buzon_CD_feature - 2020.08.02 at 19h 41m 31s.xml">
+      <configuration name="Buzon_CD.feature" configurationId="PyBehaveRunConfigurationType" />
     </history-entry>
-    <history-entry file="Landing_CD_feature - 2020.06.25 at 16h 02m 07s.xml">
-      <configuration name="Landing_CD.feature" configurationId="PyBehaveRunConfigurationType" />
+    <history-entry file="Buzon_CD_feature - 2020.08.02 at 19h 49m 52s.xml">
+      <configuration name="Buzon_CD.feature" configurationId="PyBehaveRunConfigurationType" />
     </history-entry>
-    <history-entry file="Landing_CD_feature - 2020.06.25 at 16h 16m 10s.xml">
-      <configuration name="Landing_CD.feature" configurationId="PyBehaveRunConfigurationType" />
+    <history-entry file="Buzon_CD_feature - 2020.08.02 at 19h 56m 35s.xml">
+      <configuration name="Buzon_CD.feature" configurationId="PyBehaveRunConfigurationType" />
     </history-entry>
-    <history-entry file="Landing_CD_feature - 2020.06.25 at 16h 28m 37s.xml">
-      <configuration name="Landing_CD.feature" configurationId="PyBehaveRunConfigurationType" />
+    <history-entry file="Buzon_CD_feature - 2020.08.02 at 20h 01m 55s.xml">
+      <configuration name="Buzon_CD.feature" configurationId="PyBehaveRunConfigurationType" />
     </history-entry>
-    <history-entry file="Landing_CD_feature - 2020.06.25 at 16h 58m 31s.xml">
-      <configuration name="Landing_CD.feature" configurationId="PyBehaveRunConfigurationType" />
+    <history-entry file="Buzon_CD_feature - 2020.08.02 at 20h 14m 36s.xml">
+      <configuration name="Buzon_CD.feature" configurationId="PyBehaveRunConfigurationType" />
     </history-entry>
-    <history-entry file="Landing_CD_feature - 2020.06.25 at 17h 06m 41s.xml">
-      <configuration name="Landing_CD.feature" configurationId="PyBehaveRunConfigurationType" />
+    <history-entry file="Buzon_CD_feature - 2020.08.02 at 21h 09m 03s.xml">
+      <configuration name="Buzon_CD.feature" configurationId="PyBehaveRunConfigurationType" />
     </history-entry>
-    <history-entry file="Landing_CD_feature - 2020.06.25 at 17h 16m 25s.xml">
-      <configuration name="Landing_CD.feature" configurationId="PyBehaveRunConfigurationType" />
+    <history-entry file="Buzon_CD_feature - 2020.08.02 at 21h 59m 56s.xml">
+      <configuration name="Buzon_CD.feature" configurationId="PyBehaveRunConfigurationType" />
     </history-entry>
-    <history-entry file="Landing_CD_feature - 2020.06.25 at 17h 50m 41s.xml">
-      <configuration name="Landing_CD.feature" configurationId="PyBehaveRunConfigurationType" />
+    <history-entry file="Buzon_CD_feature - 2020.08.02 at 22h 27m 45s.xml">
+      <configuration name="Buzon_CD.feature" configurationId="PyBehaveRunConfigurationType" />
     </history-entry>
-    <history-entry file="Landing_CD_feature - 2020.06.25 at 18h 00m 50s.xml">
-      <configuration name="Landing_CD.feature" configurationId="PyBehaveRunConfigurationType" />
+    <history-entry file="Buzon_CD_feature - 2020.08.02 at 22h 43m 28s.xml">
+      <configuration name="Buzon_CD.feature" configurationId="PyBehaveRunConfigurationType" />
     </history-entry>
-    <history-entry file="Landing_CD_feature - 2020.06.25 at 18h 14m 41s.xml">
-      <configuration name="Landing_CD.feature" configurationId="PyBehaveRunConfigurationType" />
+    <history-entry file="Buzon_CD_feature - 2020.08.02 at 23h 03m 21s.xml">
+      <configuration name="Buzon_CD.feature" configurationId="PyBehaveRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -410,9 +434,9 @@
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32838285" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32791328" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49928367" weight="0.6490515" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49928367" visible="true" weight="0.80623305" />
       <window_info anchor="bottom" id="Terminal" order="12" weight="0.75609756" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8632327" visible="true" weight="0.17765044" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8632327" visible="true" weight="0.20845272" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -427,29 +451,6 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32838285" />
     </layout>
-    <layout-to-restore>
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8632327" visible="true" weight="0.17765044" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32838285" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" />
-      <window_info id="Structure" order="1" sideWeight="0.20754717" side_tool="true" weight="0.16260745" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32791328" />
-      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49928367" visible="true" weight="0.18834688" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32838285" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32791328" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.76567656" />
-      <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="bottom" id="Terminal" order="12" weight="0.75609756" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5007163" side_tool="true" weight="0.3292683" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -470,27 +471,10 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="18" />
+      <option name="time" value="19" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/deprecated/tst_001.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" selection-start-line="18" selection-end-line="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/deprecated/test_002.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="36" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/deprecated/testRudimentario.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -563,13 +547,6 @@
     <entry file="file://$PROJECT_DIR$/src/test/landin_CD.py" />
     <entry file="file://$PROJECT_DIR$/src/test/landing.py" />
     <entry file="file://$PROJECT_DIR$/src/test/landing_cd.py" />
-    <entry file="file://$PROJECT_DIR$/enviroment/Lib/site-packages/selenium/webdriver/remote/webelement.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1173">
-          <caret line="79" selection-start-line="79" selection-end-line="79" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/enviroment/Lib/site-packages/selenium/webdriver/remote/webdriver.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6409">
@@ -631,13 +608,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/enviroment/Lib/site-packages/_pytest/outcomes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="144" selection-start-line="144" selection-end-line="144" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/jsons/cPortal" />
     <entry file="file://$PROJECT_DIR$/src/services/cloudPortal.json" />
     <entry file="file://$PROJECT_DIR$/src/jsons/nextClout.json" />
@@ -665,54 +635,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/testLanding_001.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/enviroment/Lib/site-packages/behave/runner.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
           <caret line="320" selection-start-line="320" selection-end-line="320" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fuctions/Inicializar.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fuctions/Functions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="127" column="52" lean-forward="true" selection-start-line="127" selection-start-column="52" selection-end-line="127" selection-end-column="56" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/test_004.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1040">
-          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/test_Inicio.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1874">
-          <caret line="155" column="38" lean-forward="true" selection-start-line="155" selection-start-column="27" selection-end-line="155" selection-end-column="38" />
-          <folding>
-            <element signature="e#24#35#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -723,27 +649,103 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jsons/portal.json">
+    <entry file="file://$PROJECT_DIR$/enviroment/Lib/site-packages/_pytest/outcomes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="359" column="55" selection-start-line="359" selection-start-column="55" selection-end-line="359" selection-end-column="55" />
+        <state relative-caret-position="92">
+          <caret line="144" selection-start-line="144" selection-end-line="144" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/features/Landing_CD.feature">
+    <entry file="file://$PROJECT_DIR$/src/test/test_004.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="43" column="34" lean-forward="true" selection-start-line="43" selection-start-column="34" selection-end-line="43" selection-end-column="34" />
+        <state relative-caret-position="238">
+          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/test_Inicio.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="155" column="38" selection-start-line="155" selection-start-column="27" selection-end-line="155" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fuctions/Inicializar.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/testLanding_001.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="395" column="8" lean-forward="true" selection-start-line="395" selection-start-column="8" selection-end-line="398" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/features/steps/Landing_CD.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4563">
-          <caret line="476" column="22" lean-forward="true" selection-start-line="476" selection-start-column="22" selection-end-line="476" selection-end-column="22" />
+        <state relative-caret-position="186">
+          <caret line="414" lean-forward="true" selection-start-line="414" selection-end-line="414" />
           <folding>
             <element signature="e#24#35#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jsons/landing.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="191" lean-forward="true" selection-start-line="191" selection-end-line="191" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/features/Landing_CD.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="62" column="49" lean-forward="true" selection-start-line="62" selection-start-column="49" selection-end-line="62" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/enviroment/Lib/site-packages/selenium/webdriver/remote/webelement.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="79" selection-start-line="79" selection-end-line="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jsons/portal.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="493" column="2" lean-forward="true" selection-start-line="493" selection-start-column="2" selection-end-line="493" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fuctions/Functions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="73">
+          <caret line="110" lean-forward="true" selection-start-line="110" selection-end-line="110" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/features/steps/Buzon_CD.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="722" column="20" selection-start-line="722" selection-start-column="20" selection-end-line="722" selection-end-column="20" />
+          <folding>
+            <element signature="e#24#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/features/Buzon_CD.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="17" column="24" lean-forward="true" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
         </state>
       </provider>
     </entry>
