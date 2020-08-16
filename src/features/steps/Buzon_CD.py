@@ -13,7 +13,7 @@ from selenium.webdriver.common.by import By
 
 use_step_matcher("re")
 
-class Landing_CD(Buzon):
+class Landing_CD(Buzon, ):
     @given("Open the application")
     def abrir_navegador(self):
         Buzon.abrir_navegador(self)
@@ -173,6 +173,8 @@ class Landing_CD(Buzon):
 
     @step("I click Detalles")
     def step_impl(self):
+        comentario = "Este es un comentario Automatizado"
+
         localizador = self.driver.find_element(By.XPATH, "/html/body/div[3]/div/app-amx-files/app-files-content/div/app-list[3]/app-file[1]/div/div[1]/div[3]")
         action = ActionChains(self.driver)
         action.move_to_element(localizador)
@@ -180,6 +182,100 @@ class Landing_CD(Buzon):
         time.sleep(3)
         Buzon.get_elements(self, "Detalles").click()
         time.sleep(3)
+
+        Buzon.get_elements(self, "Detalles_Favoritiar/Desfavoritiar").click()
+
+        localizador = self.driver.find_element(By.XPATH,
+                                               "/html/body/div[3]/div/app-amx-files/app-files-content/div/app-list[3]/app-file[1]/div/div[1]/div[3]")
+        action = ActionChains(self.driver)
+        action.move_to_element(localizador)
+        action.perform()
+        time.sleep(3)
+        Buzon.get_elements(self, "Detalles").click()
+        time.sleep(3)
+
+        Buzon.get_elements(self, "Detalles_Mostrar/Ocultar").click()
+        time.sleep(3)
+        Buzon.get_elements(self, "Detalles_Mostrar/Ocultar").click()
+        time.sleep(3)
+
+        localizador = self.driver.find_element(By.XPATH,
+                                               "/html/body/div[3]/div/div/ul/li[3]")
+        action = ActionChains(self.driver)
+        action.move_to_element(localizador)
+        action.perform()
+        time.sleep(2)
+        Buzon.get_elements(self, "Detalles_Versiones").click()
+        time.sleep(2)
+
+        Buzon.get_elements(self, "Detalles_Comentarios").click()
+        time.sleep(3)
+        Buzon.get_elements(self, "Detalles_CajaComentario").click()
+        Buzon.get_elements(self, "Detalles_CajaComentario").send_keys(comentario)
+        time.sleep(2)
+
+        localizador = self.driver.find_element(By.XPATH,
+                                               "/html/body/div[3]/div/div/div[2]/div[3]/div[1]/form/input")
+        action = ActionChains(self.driver)
+        action.move_to_element(localizador)
+        action.perform()
+        time.sleep(2)
+        Buzon.get_elements(self, "Detalles_PublicarComentario").click()
+        time.sleep(2)
+
+        ########### MENU COMENTARIOS ##################3
+        '''localizador = self.driver.find_element(By.XPATH,
+                                               "/html/body/div[3]/div/div/div[2]/div[2]/ul")
+        action = ActionChains(self.driver)
+        action.move_to_element(localizador)
+        action.perform()
+        time.sleep(2)
+        Buzon.get_elements(self, "Detalles_ComentarioMenu").click()
+        time.sleep(2)
+
+        localizador = self.driver.find_element(By.XPATH,
+                                               "/html/body/div[3]/div/div/div[2]/div[2]/ul/li/div[1]/div[5]/ul/li[1]/a")
+        action = ActionChains(self.driver)
+        action.move_to_element(localizador)
+        action.perform()
+        time.sleep(2)
+        Buzon.get_elements(self, "Detalles_EditarComentario").click()
+        time.sleep(2)
+
+        localizador = self.driver.find_element(By.XPATH,
+                                               "//a[contains(@class,'action cancel icon icon-close has-tooltip')]")
+        action = ActionChains(self.driver)
+        action.move_to_element(localizador)
+        action.perform()
+        time.sleep(2)
+        Buzon.get_elements(self, "Detalles_CancelarComentario").click()
+        time.sleep(2)
+
+        localizador = self.driver.find_element(By.XPATH,
+                                               "/html/body/div[3]/div/div/div[2]/div[2]/ul/li/div[1]/a")
+        action = ActionChains(self.driver)
+        action.move_to_element(localizador)
+        action.perform()
+        time.sleep(2)
+        Buzon.get_elements(self, "Detalles_ComentarioMenu").click()
+        time.sleep(2)
+
+        localizador = self.driver.find_element(By.XPATH,
+                                               "/html/body/div[3]/div/div/div[2]/div[2]/ul/li/div[1]/div[5]/ul/li[2]/a")
+        action = ActionChains(self.driver)
+        action.move_to_element(localizador)
+        action.perform()
+        time.sleep(2)
+        Buzon.get_elements(self, "Detalles_BorrarComentario").click()
+        time.sleep(2)'''
+        #####################################################################################
+
+        Buzon.get_elements(self, "Detalles_Actividad").click()
+        time.sleep(2)
+
+        '''Buzon.get_elements(self, "Detalles_Etiquetas").click()
+        time.sleep(2)'''
+
         Buzon.get_elements(self, "Cerrar_Detalles").click()
         time.sleep(3)
 
@@ -719,6 +815,11 @@ class Landing_CD(Buzon):
 
     @then("I click Cancelar Invitacion")
     def step_impl(self):
+        localizador = self.driver.find_element(By.XPATH, "/html/body/div[3]/div/div[2]/div[2]/app-amx-family-plan/div/app-member-list/div/app-member[2]/div/div[4]/button[2]")
+        action = ActionChains(self.driver)
+        action.move_to_element(localizador)
+        action.perform()
+        time.sleep(3)
         Buzon.get_elements(self, "BTN_CancelarInvita").click()
         time.sleep(5)
         Buzon.get_elements(self, "Popup_BTN_CancelarInvitacion").click()
@@ -739,6 +840,11 @@ class Landing_CD(Buzon):
 
     @then("I click Ayuda")
     def step_impl(self):
+        localizador = self.driver.find_element(By.XPATH,"/html/body/header/div[2]/div[3]/nav/ul/li[2]")
+        action = ActionChains(self.driver)
+        action.move_to_element(localizador)
+        action.perform()
+        time.sleep(3)
         Buzon.get_elements(self, "Ayuda").click()
         time.sleep(5)
 

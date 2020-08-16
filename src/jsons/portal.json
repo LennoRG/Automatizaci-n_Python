@@ -511,12 +511,12 @@
     "ValueToFind": "/html/body/header/div[2]/div[3]/nav/ul/li[1]"
   },
   "Ayuda": {
-    "GetFieldBy": "Id",
-    "ValueToFind": "external_index2"
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/header/div[2]/div[3]/nav/ul/li[2]"
   },
   "Logout": {
-    "GetFieldBy": "Id",
-    "ValueToFind": "logout"
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/header/div[2]/div[3]/nav/ul/li[3]"
   },
 
 
@@ -570,6 +570,61 @@
     "GetFieldBy": "Xpath",
     "ValueToFind": "/html/body/app-sharing-modal/div/div[1]/app-sharing/div/app-general-view/div/app-sharing-with/div[2]/textarea"
   },
+
+
+  "Detalles_Mostrar/Ocultar": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[3]/div/div/div[1]/div[1]/app-file-details/div[1]/a"
+  },
+  "Detalles_Etiquetas": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[3]/div/div/div[1]/div[1]/app-file-details/div[2]/span[3]"
+  },
+  "Detalles_ClickCajaEtiquetas": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[3]/div/div/div[1]/div[2]/div/div/ul/li/input"
+  },
+  "Detalles_Actividad": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[3]/div/div/ul/li[1]"
+  },
+  "Detalles_Comentarios": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[3]/div/div/ul/li[2]"
+  },
+  "Detalles_CajaComentario": {
+    "GetFieldBy": "Id",
+    "ValueToFind": "commentsTabViewDiv"
+  },
+  "Detalles_PublicarComentario": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[3]/div/div/div[2]/div[3]/div[1]/form/input"
+  },
+  "Detalles_ComentarioMenu": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[3]/div/div/div[2]/div[2]/ul/li/div[1]/a"
+  },
+  "Detalles_EditarComentario": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[3]/div/div/div[2]/div[2]/ul/li/div[1]/div[5]/ul/li[1]/a"
+  },
+  "Detalles_BorrarComentario": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[3]/div/div/div[2]/div[2]/ul/li/div[1]/div[5]/ul/li[2]/a"
+  },
+  "Detalles_CancelarComentario": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//a[contains(@class,'action cancel icon icon-close has-tooltip')]"
+  },
+  "Detalles_Versiones": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[3]/div/div/ul/li[3]"
+  },
+  "Detalles_Favoritiar/Desfavoritiar": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[3]/div/div/div[1]/div[1]/app-file-details/div[2]/a/icon"
+  },
+
 
 
 

@@ -2,6 +2,7 @@
 Feature: Funciones de Landing Claro drive
   # Enter feature description here
 
+  @Landing
   Scenario: Abrir el Navegador
     Given Open the application Claro drive
     When I charge the Json of the App: landing.json

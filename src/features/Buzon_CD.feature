@@ -2,6 +2,7 @@
 Feature: Funciones de Buzon Claro drive
   # Enter feature description here
 
+  @Buzon
   Scenario: Abrir el Navegador
     Given Open the application
     When I charge the Json of the App: portal.json
