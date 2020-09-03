@@ -626,10 +626,30 @@
   },
 
 
-
-
-
-
+  "Wizard_BTN": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/header/div[2]/app-start-wizard-button/div"
+  },
+  "Wizard_BTN_Comenzar": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[3]/div/app-amx-files/app-wizard-popup/div[3]/div/div/div[1]/div/div[3]/a[2]"
+  },
+  "Wizard_BTN_Saltar": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[3]/div/app-amx-files/app-wizard-popup/div[3]/div/div/div[1]/div/div[3]/a[1]"
+  },
+  "Wizard_BTN_Siguiente": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[3]/div/app-amx-files/app-wizard-popup/div[3]/div/div/div[1]/div/div[3]/a[2]"
+  },
+  "Wizard_BTN_Cerrar": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[3]/div/app-amx-files/app-wizard-popup/div[3]/div/div/div[1]/div/div[3]/a[1]"
+  },
+  "Wizard_BTN_Finalizar": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[3]/div/app-amx-files/app-wizard-popup/div[3]/div/div/div[1]/div/div[3]/a[2]"
+  },
 
   "Centro de ayuda": {
     "GetFieldBy": "Link",

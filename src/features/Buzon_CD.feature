@@ -3,12 +3,26 @@ Feature: Funciones de Buzon Claro drive
   # Enter feature description here
 
   @Buzon
-  Scenario: Abrir el Navegador
+  Scenario: Smoke Test Buzon
     Given Open the application
     When I charge the Json of the App: portal.json
     And I click on the button Iniciar Sesion
-    And I click Correo
-    And I click on the button Btn_Crear+
+    When I click Correo
+    Then I click Wizard
+    And I click Comenzar
+    Then I click Siguiente on the CREAR button
+    Then I click Siguiente on the Menu contextual button
+    Then I click Siguiente on the Menu Favoritos button
+    And I click Finalizar on the Menu Galeria button
+    Then I click Wizard
+    And I click Comenzar
+    Then  I click Cerrar
+    Then I click Wizard
+    And I click Comenzar
+    Then I click Saltar
+
+
+    When I click on the button Btn_Crear+
     And I click Carpeta
     Then I click Archivo de Texto
     Then I click Vista Cuadricula
