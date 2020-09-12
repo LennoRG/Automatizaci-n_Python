@@ -14,7 +14,7 @@ from selenium.webdriver.common.by import By
 use_step_matcher("re")
 
 
-class Landing_CD(Buzon, ):
+class Landing_CD(Buzon):
     @given("Open the application")
     def abrir_navegador(self):
         Buzon.abrir_navegador(self)
@@ -77,8 +77,16 @@ class Landing_CD(Buzon, ):
         time.sleep(3)
         Buzon.get_elements(self, "Btn_Crear_Archivo_Texto").click()
         time.sleep(3)
+
+        localizador = self.driver.find_element(By.XPATH,
+                                               "/html/body/div[3]/div/div[2]/div[2]/div[1]/button")
+        action = ActionChains(self.driver)
+        action.move_to_element(localizador)
+        #action.perform()
+        time.sleep(2)
         Buzon.get_elements(self, "Cerrar_Archivo_Texto").click()
         time.sleep(3)
+
         Buzon.get_elements(self, "Cerrar_Detalle_Texto").click()
         time.sleep(3)
 
@@ -103,6 +111,12 @@ class Landing_CD(Buzon, ):
         correo = "pruebaAutomatizada@gmail.com"
         comentario = "Esta es una prueba de Automatización"
 
+        localizador = self.driver.find_element(By.XPATH,
+                                               "/html/body/div[3]/div/app-amx-files/app-files-content/div/app-list[3]/app-file[1]/div/div[1]/app-menu/ul/li[2]")
+        action = ActionChains(self.driver)
+        action.move_to_element(localizador)
+        action.perform()
+        time.sleep(3)
         Buzon.get_elements(self, "Compartir").click()
         time.sleep(3)
 
@@ -314,9 +328,9 @@ class Landing_CD(Buzon, ):
 
     @step("I click Check_Imagen")
     def step_impl(self):
-        Buzon.get_elements(self, "Check_Imagen").click()  # SELECCIONO ARCHIVO
+        Buzon.get_elements(self, "Check_Imagen").click()  #SELECCIONO ARCHIVO
         time.sleep(3)
-        Buzon.get_elements(self, "Check_Imagen").click()  # DESELECCIONO ARCHIVO
+        Buzon.get_elements(self, "Check_Imagen").click()  #DESELECCIONO ARCHIVO
         time.sleep(3)
 
         assert Buzon.get_text(self, "Titulo_Archivos") == "Archivos"  # COMPARO EL TEXT ARCHIVOS
@@ -361,6 +375,12 @@ class Landing_CD(Buzon, ):
     @step("I clic Menu_List_Imagenes")
     def step_impl(self):
         ############### FUNCIONALIDADES DE LA LISTA DE OPCIONES EN IMAGENES EN ARCHIVOS RECIENTES ############
+        localizador = self.driver.find_element(By.XPATH,
+                                               "(//div[contains(@class,'open-menu icon-more in-list')])[1]")
+        action = ActionChains(self.driver)
+        action.move_to_element(localizador)
+        action.perform()
+        time.sleep(2)
         Buzon.get_elements(self, "Menu_List_Imagenes").click()
         time.sleep(3)
 
@@ -411,7 +431,7 @@ class Landing_CD(Buzon, ):
         time.sleep(3)
         Buzon.get_elements(self, "Menu_List_Imagenes_Favoritiar").click()
         time.sleep(3)
-        Buzon.get_elements(self, "Menu_List_Imagenes").click()
+        Buzon.get_elements(self, "Abrir_PreviewImagen").click()
         time.sleep(3)
         Buzon.get_elements(self, "Cerrar_Imagen").click()
         time.sleep(3)
@@ -661,8 +681,8 @@ class Landing_CD(Buzon, ):
 
     @step("I write current password and new password Cambio Contraseña")
     def step_impl(self):
-        contraseñaActual = "Qa123456$"
-        contraseñaNueva = "Qa654321$"
+        contraseñaActual = "Qa654321$"
+        contraseñaNueva = "Qa654321$$"
 
         Buzon.get_elements(self, "Contra_Actual").send_keys(contraseñaActual)
         time.sleep(3)
@@ -684,7 +704,7 @@ class Landing_CD(Buzon, ):
 
         passOriginal = "Qa123456$"
 
-        contraseñaActual = "Qa654321$"
+        contraseñaActual = "Qa654321$$"
 
         Buzon.get_elements(self, "Contra_Actual").send_keys(contraseñaActual)
         time.sleep(3)
@@ -858,6 +878,7 @@ class Landing_CD(Buzon, ):
             print(RESULTADO_TEXTO)
             #self.count = self.count + 1
 
+
         Buzon.get_elements(self, "Wizard_BTN_Siguiente").click()
         time.sleep(2)
 
@@ -890,3 +911,5 @@ class Landing_CD(Buzon, ):
     def step_impl(self):
         Buzon.get_elements(self, "Wizard_BTN_Saltar").click()
         time.sleep(3)
+
+

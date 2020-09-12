@@ -216,7 +216,7 @@
 
   "Menu_List_Imagenes": {
     "GetFieldBy": "Xpath",
-    "ValueToFind": "/html/body/div[3]/div/app-amx-files/app-files-content/div/app-list[1]/app-file[1]/div/div[1]/div[3]"
+    "ValueToFind": "(//div[contains(@class,'open-menu icon-more in-list')])[1]"
   },
 
   "Menu_List_Imagenes_Eliminar": {
@@ -252,6 +252,10 @@
   "Menu_List_Imagenes_Descargar": {
     "GetFieldBy": "Xpath",
     "ValueToFind": "/html/body/div[3]/div/app-amx-files/app-files-content/div/app-list[1]/app-file[1]/div/div[1]/app-menu/ul/li[7]"
+  },
+  "Abrir_PreviewImagen": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[3]/div/app-amx-files/app-files-content/div/app-list[1]/app-file[1]/div/div[1]/div[1]"
   },
   "Cerrar_Imagen": {
     "GetFieldBy": "Xpath",

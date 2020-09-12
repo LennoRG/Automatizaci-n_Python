@@ -8,6 +8,9 @@ from fuctions.Functions import Functions as Landing
 from fuctions.Inicializar import Inicializar
 from selenium.webdriver.common.by import By
 
+
+
+
 use_step_matcher("re")
 
 class Landing_CD(Landing):
@@ -117,7 +120,7 @@ class Landing_CD(Landing):
     @then("In click in button Cancelar")
     def step_impl(self):
         Landing.get_elements(self, "BTN_Cancelar").click()
-        time.sleep(5)
+        time.sleep(3)
 
         # FUNCIONALIDADES BARRA DE OPCIONES DE LANDING
         self.OPCIONES_LANDING = self.driver.find_elements(By.CLASS_NAME, "Menu ng-star-inserted")
@@ -127,15 +130,14 @@ class Landing_CD(Landing):
             RESULTADO_OPCIONES = ['Descubre', 'Comparte', 'Respalda', 'Descarga',
                                   'Opciones', 'Planes', 'Negocio']
             assert RESULTADO_OPCIONES[self.count] == self.OPC.text, "EL TEXTO OPCIONES NO COINCIDE"
+            print(RESULTADO_OPCIONES)
             self.count = self.count + 1
         time.sleep(3)
 
     @then("I click Descubre")
     def step_impl(self):
-
         Landing.get_elements(self, "Descubre").click()
         time.sleep(3)
-
 
 
     @then("I click Comparte")
@@ -143,17 +145,87 @@ class Landing_CD(Landing):
         Landing.get_elements(self, "Comparte").click()
         time.sleep(3)
 
+        '''self.Texto_Comparte = self.driver.find_elements(By.XPATH,
+                                                        "/html/body/div[4]/app-root/app-landing-wrapper/app-container2/div/div/div/div[1]/div[1]")
+        self.count = 0
+
+        for self.Comparte in self.Texto_Comparte:
+            RESULTADO_TEXTO = [
+                'Claro drive contigo']
+            assert RESULTADO_TEXTO[self.count] == self.Comparte.text, "EL TEXTO NO COINCIDE"
+            print(RESULTADO_TEXTO)
+            # self.count = self.count + 1
+        time.sleep(2)
+
+        self.Texto_ComparteText = self.driver.find_elements(By.XPATH,
+                                                        "/html/body/div[4]/app-root/app-landing-wrapper/app-container2/div/div/div/div[1]/div[2]")
+        self.count = 0
+
+        for self.ComparteText in self.Texto_ComparteText:
+            RESULTADO_TEXTO = [
+                'Claro drive te regala 25GB de almacenamiento para empezar a compartir tu contenido a donde sea que vayas y desde cualquier dispositivo.']
+            assert RESULTADO_TEXTO[self.count] == self.ComparteText.text, "EL TEXTO NO COINCIDE (Segundo Texto)"
+            print(RESULTADO_TEXTO)
+            # self.count = self.count + 1
+        time.sleep(3)'''
+
 
     @then("I click Respalda")
     def step_impl(self):
         Landing.get_elements(self, "Respalda").click()
         time.sleep(3)
 
+        '''self.Texto_Respalda = self.driver.find_elements(By.XPATH,
+                                                            "/html/body/div[4]/app-root/app-landing-wrapper/app-container3/div/div/div[1]/div[1]")
+        self.count = 0
+
+        for self.Respalda in self.Texto_Respalda:
+            RESULTADO_TEXTO = [
+                'No pierdas tus fotos']
+            assert RESULTADO_TEXTO[self.count] == self.Respalda.text, "EL TEXTO NO COINCIDE"
+            print(RESULTADO_TEXTO)
+            # self.count = self.count + 1
+        time.sleep(3)
+
+        self.Texto_RespaldaText = self.driver.find_elements(By.XPATH,
+                                                            "/html/body/div[4]/app-root/app-landing-wrapper/app-container3/div/div/div[1]/div[2]")
+        self.count = 0
+
+        for self.RespaldaText in self.Texto_RespaldaText:
+            RESULTADO_TEXTO = [
+                'En Claro drive es muy sencillo crear tu álbum, compartirlo y organizarlo. Puedes buscar fotos por fecha o evento, y respaldarlas en tu dispositivo móvil.']
+            assert RESULTADO_TEXTO[self.count] == self.RespaldaText.text, "EL TEXTO NO COINCIDE (Segundo Texto)"
+            print(RESULTADO_TEXTO)
+            # self.count = self.count + 1
+        time.sleep(3)'''
+
 
     @when("I click Descarga")
     def step_impl(self):
         Landing.get_elements(self, "Descarga").click()
         time.sleep(3)
+
+        '''self.Texto_Descarga = self.driver.find_elements(By.XPATH,
+                                                        "/html/body/div[4]/app-root/app-landing-wrapper/app-container4/div/div/div[1]/div[1]")
+        self.count = 0
+
+        for self.Descarga in self.Texto_Descarga:
+            RESULTADO_TEXTO = ['Claro drive para todos']
+            assert RESULTADO_TEXTO[self.count] == self.Descarga.text, "EL TEXTO NO COINCIDE"
+            print(RESULTADO_TEXTO)
+            # self.count = self.count + 1
+        time.sleep(3)
+
+        self.Texto_DescargaText = self.driver.find_elements(By.XPATH,
+                                                            "/html/body/div[4]/app-root/app-landing-wrapper/app-container4/div/div/div[1]/div[2]")
+        self.count = 0
+
+        for self.DescargaText in self.Texto_DescargaText:
+            RESULTADO_TEXTO = ['Disponible en Google Play, iOS']
+            assert RESULTADO_TEXTO[self.count] == self.DescargaText.text, "EL TEXTO NO COINCIDE (Segundo Texto)"
+            print(RESULTADO_TEXTO)
+            # self.count = self.count + 1
+        time.sleep(3)'''
 
 
     @then("I click Google play")
@@ -220,6 +292,29 @@ class Landing_CD(Landing):
     def step_impl(self):
         Landing.get_elements(self, "Planes").click()
         time.sleep(3)
+
+        '''self.Texto_Planes = self.driver.find_elements(By.XPATH,
+                                                       "/html/body/div[4]/app-root/app-landing-wrapper/app-container6/div/div/div/div[1]")
+        self.count = 0
+
+        for self.Planes in self.Texto_Planes:
+            RESULTADO_TEXTO = ['¿Necesitas más espacio?']
+            assert RESULTADO_TEXTO[self.count] == self.Planes.text, "EL TEXTO NO COINCIDE"
+            print(RESULTADO_TEXTO)
+            # self.count = self.count + 1
+        time.sleep(3)
+
+        self.Texto_PlanesText = self.driver.find_elements(By.XPATH,
+                                                            "/html/body/div[4]/app-root/app-landing-wrapper/app-container6/div/div/div/div[2]")
+        self.count = 0
+
+        for self.PlanesText in self.Texto_PlanesText:
+            RESULTADO_TEXTO = [
+                'Para llevar tus archivos a donde quieras, es probable que necesites un plan a tu medida. Por ello te ofrecemos planes flexibles en los que instantáneamente obtendrás una mayor capacidad de almacenamiento en la nube.']
+            assert RESULTADO_TEXTO[self.count] == self.PlanesText.text, "EL TEXTO NO COINCIDE (Segundo Texto)"
+            print(RESULTADO_TEXTO)
+            # self.count = self.count + 1
+        time.sleep(3)'''
 
 
     @then("I click plan TDC")
@@ -310,7 +405,7 @@ class Landing_CD(Landing):
         self.count = 0
 
         for self.PLAN_ in self.PLAN_TELCEL:
-            RESULDADO_PLAN = ['100GB', '200GB', '300GB', '1024GB']
+            RESULDADO_PLAN = ['25GB', '100GB', '200GB', '300GB', '1024GB']
             assert RESULDADO_PLAN[self.count] == self.PLAN_.text, "EL NUMERO DE PLANES NO COINCIDEN"
             self.count = self.count + 1
         time.sleep(3)
@@ -320,7 +415,7 @@ class Landing_CD(Landing):
         self.count = 0
 
         for self.PER in self.PERIODO_TELCEL:
-            PERIODO_RESULTADO = ['SIN COSTO', 'MENSUAL', 'MENSUAL', 'MENSUAL']
+            PERIODO_RESULTADO = ['SIN COSTO', 'SIN COSTO', 'MENSUAL', 'MENSUAL', 'MENSUAL']
             assert PERIODO_RESULTADO[self.count] == self.PER.text, "EL TEXTO PERIODO NO COINCIDE"
             self.count = self.count + 1
         time.sleep(3)
@@ -340,6 +435,12 @@ class Landing_CD(Landing):
             "/html/body/div[4]/app-root/app-landing-wrapper/app-container6/div/div/app-offer/div/app-payment-methods/app-plans/div[1]/div[2]/div[2]/div").text
         print(TEXTO_TELCEL)
         assert TEXTO_TELCEL == "Con tu número Telcel", "TEXTO NO COINCIDE"
+        time.sleep(3)
+
+        TEXTO_TELCEL25 = self.driver.find_element_by_xpath(
+            "/html/body/div[4]/app-root/app-landing-wrapper/app-container6/div/div/app-offer/div/app-payment-methods/app-plans/div[1]/div[2]/div[2]/div").text
+        print(TEXTO_TELCEL25)
+        assert TEXTO_TELCEL25 == "Con tu número Telcel", "TEXTO NO COINCIDE"
         time.sleep(3)
 
 

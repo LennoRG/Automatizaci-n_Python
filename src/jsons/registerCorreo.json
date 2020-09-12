@@ -1,0 +1,137 @@
+{
+  "BTN_Registrate": {
+    "GetFieldBy": "Id",
+    "ValueToFind": "register"
+  },
+  "Correo": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[4]/app-root/app-landing-wrapper/div/app-onboarding/div[3]/app-partner/div/div[5]"
+  },
+  "Input_IngresaCorreo": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[4]/app-root/app-landing-wrapper/div/app-onboarding/div[3]/app-partner/app-login/app-mail-register/app-form-simple/form/div[1]/div[1]/app-input-email/input"
+  },
+  "Input_Contrasena": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//input[contains(@class,'InputPassword')]"
+  },
+  "BTN_Registrarme": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[4]/app-root/app-landing-wrapper/div/app-onboarding/div[3]/app-partner/app-login/app-mail-register/app-form-simple/form/div[2]/app-button/button"
+  },
+
+  "Plan_PagoTarjeta": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[4]/app-root/app-landing-wrapper/div/app-onboarding/div[2]/app-plans/ul/li[3]"
+  },
+
+  "Plan_200GB": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[4]/app-root/app-landing-wrapper/div/app-onboarding/div[2]/app-plans/div/div[1]"
+  },
+  "Plan_BTNAceptar": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[4]/app-root/app-landing-wrapper/div/app-onboarding/div[2]/app-plans/app-button/button"
+  },
+
+
+  "InfoPago_NombreTitular": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[4]/app-root/app-landing-wrapper/div/app-onboarding/div[2]/app-card-request/form/div[1]/div[1]/app-input-name/input"
+  },
+  "InfoPago_NumeroTarjeta": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[4]/app-root/app-landing-wrapper/div/app-onboarding/div[2]/app-card-request/form/div[1]/div[2]/app-input-credit-card-number/input"
+  },
+  "InfoPago_Mes": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[4]/app-root/app-landing-wrapper/div/app-onboarding/div[2]/app-card-request/form/div[1]/div[3]/app-input-credit-card-exp-month/input"
+  },
+  "InfoPago_Anio": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[4]/app-root/app-landing-wrapper/div/app-onboarding/div[2]/app-card-request/form/div[1]/div[4]/app-input-credit-card-exp-year/input"
+  },
+  "InfoPago_CVV": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[4]/app-root/app-landing-wrapper/div/app-onboarding/div[2]/app-card-request/form/div[1]/div[5]/app-input-credit-card-code/input"
+  },
+  "InfoPago_BTNAceptar": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[4]/app-root/app-landing-wrapper/div/app-onboarding/div[2]/app-card-request/form/div[2]/app-button/button"
+  },
+
+  "Success_BTN": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[4]/app-root/app-landing-wrapper/div/app-onboarding/div/app-success-redirect/div[4]/button"
+  },
+
+
+  "Popup_Bienvenida_GooglePlay": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[7]/div[1]/div[2]/div[2]/div[1]/div/div[3]/a[1]"
+
+  },
+  "Popup_Bienvenida_AppStore": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[7]/div[1]/div[2]/div[2]/div[1]/div/div[3]/a[2]"
+  },
+  "Popup_Bienvenida_Desktop": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[7]/div[1]/div[2]/div[2]/div[1]/div/div[3]/a[3]"
+  },
+  "Popup_Bienvenida_TerminosPolitica": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[7]/div[1]/div[2]/div[2]/div[1]/div/div[4]/a"
+  },
+  "Popup_Bienvenida_200GB": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[7]/div[1]/div[2]/div[2]/div[1]/div/div[5]/div[1]"
+  },
+  "Popup_Bienvenida_300GB": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[7]/div[1]/div[2]/div[2]/div[1]/div/div[5]/div[2]"
+  },
+  "Popup_Bienvenida_1024GB": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[7]/div[1]/div[2]/div[2]/div[1]/div/div[5]/div[3]"
+  },
+  "Seccion_Archivos": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/header/div[1]/ul/li[1]/a"
+  },
+  "Popup_Bienvenida_Cerrar": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[7]/div[1]/div[2]/div[2]/button[4]"
+  },
+  "Popup_Bienvenida_CerrarId": {
+    "GetFieldBy": "Id",
+    "ValueToFind": "cboxClose"
+  },
+
+
+  "Wizard_BTN": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/header/div[2]/app-start-wizard-button/div"
+  },
+  "Wizard_BTN_Comenzar": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[3]/div/app-amx-files/app-wizard-popup/div[3]/div/div/div[1]/div/div[3]/a[2]"
+  },
+  "Wizard_BTN_Saltar": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[3]/div/app-amx-files/app-wizard-popup/div[3]/div/div/div[1]/div/div[3]/a[1]"
+  },
+  "Wizard_BTN_Siguiente": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[3]/div/app-amx-files/app-wizard-popup/div[3]/div/div/div[1]/div/div[3]/a[2]"
+  },
+  "Wizard_BTN_Cerrar": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[3]/div/app-amx-files/app-wizard-popup/div[3]/div/div/div[1]/div/div[3]/a[1]"
+  },
+  "Wizard_BTN_Finalizar": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/div[3]/div/app-amx-files/app-wizard-popup/div[3]/div/div/div[1]/div/div[3]/a[2]"
+  }
+
+}
