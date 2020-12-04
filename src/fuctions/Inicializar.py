@@ -1,5 +1,7 @@
 import os
 
+
+
 class Inicializar():
     #DIRECTORIO BASE
     basedir = os.path.abspath(os.path.join(__file__, "../.."))
@@ -25,3 +27,5 @@ class Inicializar():
 
     if Environment == 'PROD':
         URL = 'https://www.clarodrive.com/'
+
+

@@ -145,7 +145,7 @@ class Landing_CD(Landing):
         Landing.get_elements(self, "Comparte").click()
         time.sleep(3)
 
-        '''self.Texto_Comparte = self.driver.find_elements(By.XPATH,
+        self.Texto_Comparte = self.driver.find_elements(By.XPATH,
                                                         "/html/body/div[4]/app-root/app-landing-wrapper/app-container2/div/div/div/div[1]/div[1]")
         self.count = 0
 
@@ -163,11 +163,11 @@ class Landing_CD(Landing):
 
         for self.ComparteText in self.Texto_ComparteText:
             RESULTADO_TEXTO = [
-                'Claro drive te regala 25GB de almacenamiento para empezar a compartir tu contenido a donde sea que vayas y desde cualquier dispositivo.']
+                'Claro drive te regala 100GB de almacenamiento para empezar a compartir tu contenido a donde sea que vayas y desde cualquier dispositivo.']
             assert RESULTADO_TEXTO[self.count] == self.ComparteText.text, "EL TEXTO NO COINCIDE (Segundo Texto)"
             print(RESULTADO_TEXTO)
             # self.count = self.count + 1
-        time.sleep(3)'''
+        time.sleep(3)
 
 
     @then("I click Respalda")
@@ -175,7 +175,7 @@ class Landing_CD(Landing):
         Landing.get_elements(self, "Respalda").click()
         time.sleep(3)
 
-        '''self.Texto_Respalda = self.driver.find_elements(By.XPATH,
+        self.Texto_Respalda = self.driver.find_elements(By.XPATH,
                                                             "/html/body/div[4]/app-root/app-landing-wrapper/app-container3/div/div/div[1]/div[1]")
         self.count = 0
 
@@ -197,7 +197,7 @@ class Landing_CD(Landing):
             assert RESULTADO_TEXTO[self.count] == self.RespaldaText.text, "EL TEXTO NO COINCIDE (Segundo Texto)"
             print(RESULTADO_TEXTO)
             # self.count = self.count + 1
-        time.sleep(3)'''
+        time.sleep(3)
 
 
     @when("I click Descarga")
@@ -205,7 +205,7 @@ class Landing_CD(Landing):
         Landing.get_elements(self, "Descarga").click()
         time.sleep(3)
 
-        '''self.Texto_Descarga = self.driver.find_elements(By.XPATH,
+        self.Texto_Descarga = self.driver.find_elements(By.XPATH,
                                                         "/html/body/div[4]/app-root/app-landing-wrapper/app-container4/div/div/div[1]/div[1]")
         self.count = 0
 
@@ -225,7 +225,7 @@ class Landing_CD(Landing):
             assert RESULTADO_TEXTO[self.count] == self.DescargaText.text, "EL TEXTO NO COINCIDE (Segundo Texto)"
             print(RESULTADO_TEXTO)
             # self.count = self.count + 1
-        time.sleep(3)'''
+        time.sleep(3)
 
 
     @then("I click Google play")
@@ -244,17 +244,39 @@ class Landing_CD(Landing):
         time.sleep(5)
 
 
-    @then("I click Claro drive")
+    '''@then("I click Claro drive")
     def step_impl(self):
         Landing.get_elements(self, "Descarga_ClaroDrive").click()
         time.sleep(5)
         Landing.get_elements(self, "Descarga_ClaroDrive_Imagen").click()
-        time.sleep(5)
+        time.sleep(5)'''
 
 
     @when("I click Opciones")
     def step_impl(self):
         Landing.get_elements(self, "Opciones").click()
+        time.sleep(3)
+
+        self.Texto_Opciones = self.driver.find_elements(By.XPATH,
+                                                        "/html/body/div[4]/app-root/app-landing-wrapper/app-container5/div/div/div[1]/div[1]")
+        self.count = 0
+
+        for self.Opciones in self.Texto_Opciones:
+            RESULTADO_TEXTO = ['¡Comienza ahora!']
+            assert RESULTADO_TEXTO[self.count] == self.Opciones.text, "EL TEXTO NO COINCIDE"
+            print(RESULTADO_TEXTO)
+            # self.count = self.count + 1
+        time.sleep(3)
+
+        self.Texto_OpcionesText = self.driver.find_elements(By.XPATH,
+                                                            "/html/body/div[4]/app-root/app-landing-wrapper/app-container5/div/div/div[1]/div[2]")
+        self.count = 0
+
+        for self.OpcionesText in self.Texto_OpcionesText:
+            RESULTADO_TEXTO = ['Elige una opción para registrarte']
+            assert RESULTADO_TEXTO[self.count] == self.OpcionesText.text, "EL TEXTO NO COINCIDE (Segundo Texto)"
+            print(RESULTADO_TEXTO)
+            # self.count = self.count + 1
         time.sleep(3)
 
 
@@ -293,7 +315,7 @@ class Landing_CD(Landing):
         Landing.get_elements(self, "Planes").click()
         time.sleep(3)
 
-        '''self.Texto_Planes = self.driver.find_elements(By.XPATH,
+        self.Texto_Planes = self.driver.find_elements(By.XPATH,
                                                        "/html/body/div[4]/app-root/app-landing-wrapper/app-container6/div/div/div/div[1]")
         self.count = 0
 
@@ -314,7 +336,7 @@ class Landing_CD(Landing):
             assert RESULTADO_TEXTO[self.count] == self.PlanesText.text, "EL TEXTO NO COINCIDE (Segundo Texto)"
             print(RESULTADO_TEXTO)
             # self.count = self.count + 1
-        time.sleep(3)'''
+        time.sleep(3)
 
 
     @then("I click plan TDC")
@@ -405,7 +427,7 @@ class Landing_CD(Landing):
         self.count = 0
 
         for self.PLAN_ in self.PLAN_TELCEL:
-            RESULDADO_PLAN = ['25GB', '100GB', '200GB', '300GB', '1024GB']
+            RESULDADO_PLAN = ['100GB', '200GB', '300GB', '1024GB']
             assert RESULDADO_PLAN[self.count] == self.PLAN_.text, "EL NUMERO DE PLANES NO COINCIDEN"
             self.count = self.count + 1
         time.sleep(3)
@@ -415,7 +437,7 @@ class Landing_CD(Landing):
         self.count = 0
 
         for self.PER in self.PERIODO_TELCEL:
-            PERIODO_RESULTADO = ['SIN COSTO', 'SIN COSTO', 'MENSUAL', 'MENSUAL', 'MENSUAL']
+            PERIODO_RESULTADO = ['SIN COSTO', 'MENSUAL', 'MENSUAL', 'MENSUAL']
             assert PERIODO_RESULTADO[self.count] == self.PER.text, "EL TEXTO PERIODO NO COINCIDE"
             self.count = self.count + 1
         time.sleep(3)
@@ -437,11 +459,11 @@ class Landing_CD(Landing):
         assert TEXTO_TELCEL == "Con tu número Telcel", "TEXTO NO COINCIDE"
         time.sleep(3)
 
-        TEXTO_TELCEL25 = self.driver.find_element_by_xpath(
+        '''TEXTO_TELCEL25 = self.driver.find_element_by_xpath(
             "/html/body/div[4]/app-root/app-landing-wrapper/app-container6/div/div/app-offer/div/app-payment-methods/app-plans/div[1]/div[2]/div[2]/div").text
         print(TEXTO_TELCEL25)
         assert TEXTO_TELCEL25 == "Con tu número Telcel", "TEXTO NO COINCIDE"
-        time.sleep(3)
+        time.sleep(3)'''
 
 
     @when("I click Negocio")

@@ -365,15 +365,15 @@
   },
   "Orden_Gallery": {
     "GetFieldBy": "Xpath",
-    "ValueToFind": "/html/body/div[3]/div/app-gallery/app-gallery-options/div/div[1]/a[1]"
+    "ValueToFind": "/html/body/div[3]/div/app-gallery/app-gallery-options/div/div[1]/a[2]"
   },
   "Mas_Antiguo": {
     "GetFieldBy": "Xpath",
-    "ValueToFind": "/html/body/div[3]/div/app-gallery/app-gallery-options/div/div[1]/div/ul/li[2]"
+    "ValueToFind": "/html/body/div[3]/div/app-gallery/app-gallery-options/div/div[1]/div/div/div[2]"
   },
   "Mas_Reciente": {
     "GetFieldBy": "Xpath",
-    "ValueToFind": "/html/body/div[3]/div/app-gallery/app-gallery-options/div/div[1]/div/ul/li[2]"
+    "ValueToFind": "/html/body/div[3]/div/app-gallery/app-gallery-options/div/div[1]/div/div/div[1]"
   },
   "Todo_Gallery": {
     "GetFieldBy": "Xpath",

@@ -9,6 +9,7 @@ from fuctions.Functions import Functions as Register
 from fuctions.Inicializar import Inicializar
 from selenium.webdriver.common.by import By
 
+
 use_step_matcher("re")
 
 class Register_CD(Register):
@@ -36,7 +37,7 @@ class Register_CD(Register):
 
     @then("I enter the Registro data")
     def step_impl(self):
-        correoUsuario = "testautomatizado01@gmail.com"
+        correoUsuario = "testautomatizado03@getnada.com"
         contraseña = "Qa654321$"
 
         Register.get_elements(self, "Input_IngresaCorreo").send_keys(correoUsuario)

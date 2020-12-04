@@ -18,3 +18,5 @@
 [0817/185328.032:ERROR:process_reader_win.cc(151)] SuspendThread: Acceso denegado. (0x5)
 [0817/185328.032:ERROR:process_reader_win.cc(123)] NtOpenThread: {Acceso denegado} Un proceso ha solicitado acceso a un objeto, pero no se le han concedido esos derechos de acceso. (0xc0000022)
 [0817/185328.032:ERROR:exception_snapshot_win.cc(98)] thread ID 13080 not found in process
+[1018/122807.005:ERROR:directory_reader_win.cc(43)] FindFirstFile: El sistema no puede encontrar la ruta especificada. (0x3)
+[1018/122807.005:ERROR:prune_crash_reports.cc(36)] PruneCrashReportDatabase: Failed to get pending reports

@@ -210,7 +210,13 @@
 
   "Logo_ClaroDrive": {
     "GetFieldBy": "Xpath",
-    "ValueToFind": "/html/body/div[1]/div/header/div/a/img"
+    "ValueToFind": "/html/body/div[1]/app-root/app-download/div/div[1]/a/app-svg-icon/svg"
+  },
+
+
+  "loginApp": {
+    "GetFieldBy": "id",
+    "ValueToFind": "login"
   }
 
 }

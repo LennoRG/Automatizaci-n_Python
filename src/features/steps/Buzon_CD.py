@@ -30,7 +30,7 @@ class Landing_CD(Buzon):
 
     @step("I click Correo")
     def login_Correo(self):
-        nombre = "smoke.automatizado@gmail.com"
+        nombre = "testautomatizado02@getnada.com"
         contraseña = "Qa654321$"
 
         Buzon.get_elements(self, "P_Correo").click()
@@ -156,6 +156,13 @@ class Landing_CD(Buzon):
 
         Buzon.get_elements(self, "BTN_Aceptar").click()
         time.sleep(3)
+
+        localizador = self.driver.find_element(By.XPATH,
+                                                         "/html/body/app-sharing-modal/div/div[1]/app-sharing/div/app-general-view/div/app-sharing-link/div/switch/label/span")
+        action = ActionChains(self.driver)
+        action.move_to_element(localizador)
+        action.perform()
+        time.sleep(2)
         Buzon.get_elements(self, "ActivarCompartir").click()
         time.sleep(3)
         '''Buzon.get_elements(self, "BTN_Cancelar").click()
@@ -676,6 +683,12 @@ class Landing_CD(Buzon):
 
     @then("I click Espacio_Fam_Seguridad")
     def step_impl(self):
+        localizador = self.driver.find_element(By.XPATH,
+                                               "/html/body/div[3]/div/div[1]/ul/li[2]")
+        action = ActionChains(self.driver)
+        action.move_to_element(localizador)
+        action.perform()
+        time.sleep(1)
         Buzon.get_elements(self, "Espacio_Fam_Seguridad").click()
         time.sleep(5)
 
@@ -770,6 +783,12 @@ class Landing_CD(Buzon):
 
     @then("I click Reenviar Invitacion")
     def step_impl(self):
+        localizador = self.driver.find_element(By.XPATH,
+                                               "/html/body/div[3]/div/div[2]/div[2]/app-amx-family-plan/div/app-member-list/div/app-member[2]/div/div[4]/button[1]")
+        action = ActionChains(self.driver)
+        action.move_to_element(localizador)
+        action.perform()
+        time.sleep(1)
         Buzon.get_elements(self, "BTN_ReenviarInvitacion").click()
         time.sleep(3)
         Buzon.get_elements(self, "Popup_BTN_ReenviarInvitacion").click()

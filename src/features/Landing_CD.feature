@@ -36,7 +36,7 @@ Feature: Funciones de Landing Claro drive
     When I click Descarga
     Then I click Google play
     Then I click App Store
-    Then I click Claro drive
+    #Then I click Claro drive
     When I click Opciones
 
     Then I click option Telmex
