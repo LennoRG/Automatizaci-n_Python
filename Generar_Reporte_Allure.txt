@@ -1,2 +1,7 @@
 cd ./src/test
 allure serve C:\test-python-selenium\src\allure-results
+
+
+Flink prueba allure serve C:\prueba-automation-flinksrc\allure-results
+
+Ejecutar desde power sell behave -f allure_behave.formatter:AllureFormatter -o src\allure-results src/features/pruebaFlink.feature --tags=@Prueba_Saucedemo

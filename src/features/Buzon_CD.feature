@@ -24,6 +24,7 @@ Feature: Funciones de Buzon Claro drive
 
     When I click on the button Btn_Crear+
     And I click Carpeta
+    Then I click Cargar archivo
     Then I click Archivo de Texto
     Then I click Vista Cuadricula
     Then I click Vista Lista
@@ -40,7 +41,7 @@ Feature: Funciones de Buzon Claro drive
     And I click Mover Carpeta a Papelera
     Then I click Check_Header_list_view
     And I click Mover_Copiar
-   # Then I click Header_Descargar
+    #Then I click Header_Descargar
     And I clic Menu_List_Imagenes
     Then I compare actions of BTNS filters
     And I click Reciente

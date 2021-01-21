@@ -5,6 +5,7 @@ from behave import *
 import pytest
 import unittest
 
+from selenium import webdriver
 from selenium.webdriver import ActionChains
 from selenium.webdriver.common.keys import Keys
 from fuctions.Functions import Functions as Buzon
@@ -30,7 +31,7 @@ class Landing_CD(Buzon):
 
     @step("I click Correo")
     def login_Correo(self):
-        nombre = "testautomatizado02@getnada.com"
+        nombre = "testautomatizado04@getnada.com"
         contraseña = "Qa654321$"
 
         Buzon.get_elements(self, "P_Correo").click()
@@ -391,13 +392,34 @@ class Landing_CD(Buzon):
         Buzon.get_elements(self, "Menu_List_Imagenes").click()
         time.sleep(3)
 
+
+        '''self.TXT_FILTROS = self.driver.find_elements(By.XPATH,
+                                                     "/html/body/div[3]/div/app-amx-files/app-files-content/div/app-list[1]/app-file[1]/div/div[1]/app-menu/ul")
+        self.count = 0
+
+        for self.TXT_ in self.TXT_FILTROS:
+            RESULTADOS_FILTROS = ['Mover a papelera', 'Compartir', 'Añadir a favoritos',
+                                  'Detalles', 'Renombrar', 'Mover o copiar', 'Descargar']
+            assert RESULTADOS_FILTROS[self.count] == self.TXT_.text, "LOS TEXTOS FILTROS NO COINCIDEN"
+            self.count = self.count + 1'''
         assert Buzon.get_text(self, "Menu_List_Imagenes_Eliminar") == "Mover a papelera"
         assert Buzon.get_text(self, "Menu_List_Imagenes_Compartir") == "Compartir"
-        assert Buzon.get_text(self, "Menu_List_Imagenes_Favoritiar") == "Añadir a favoritos"
+        assert Buzon.get_text(self, "Menu_List_Imagenes_Favoritiar") == "Añadir a favoritos","Elimininar de favoritos"
         assert Buzon.get_text(self, "Menu_List_Texto_Destalles") == "Detalles"
         assert Buzon.get_text(self, "Menu_List_Imagenes_Renombrar") == "Renombrar"
         assert Buzon.get_text(self, "Menu_List_Imagenes_MoverCopiar") == "Mover o copiar"
         assert Buzon.get_text(self, "Menu_List_Imagenes_Descargar") == "Descargar"
+
+        '''menuCombox01 = Buzon.get_text(self, "Menu_List_Imagenes_Favoritiar") == "Añadir a favoritos", "Elimininar de favoritos"
+
+        if menuCombox01:
+            print("Añadir a favoritos")
+        else:
+            print("Eliminar de FAVORITOS")
+
+        print("LOS TEXTOS COINCIDEN CORRECTAMENTE")'''
+
+
         time.sleep(3)
 
         Buzon.get_elements(self, "Menu_List_Imagenes_Eliminar").click()
@@ -932,3 +954,13 @@ class Landing_CD(Buzon):
         time.sleep(3)
 
 
+    @then("I click Cargar archivo")
+    def step_impl(self):
+        Buzon.get_elements(self, "Btn_Crear+").click()
+        time.sleep(3)
+
+        #Buzon.get_elements(self, "Cargar_Archivo").click()
+        #time.sleep(2)
+
+        self.driver.find_element_by_id("UploadFile").send_keys('C:/Users/Lenno/Pictures/1archivo2gb')
+        time.sleep(5)
